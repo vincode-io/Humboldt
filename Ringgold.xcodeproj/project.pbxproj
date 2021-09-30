@@ -14,6 +14,10 @@
 		5194D55D27060F6500FA0365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5194D54B27060F6500FA0365 /* Assets.xcassets */; };
 		5194D55E27060F6500FA0365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5194D54B27060F6500FA0365 /* Assets.xcassets */; };
 		5194D56927060FEC00FA0365 /* Snippets in Frameworks */ = {isa = PBXBuildFile; productRef = 5194D56827060FEC00FA0365 /* Snippets */; };
+		5194D56B2706390700FA0365 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D56A2706390700FA0365 /* AppDefaults.swift */; };
+		5194D56C2706390700FA0365 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D56A2706390700FA0365 /* AppDefaults.swift */; };
+		5194D56E27063A3500FA0365 /* CredentialsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D56D27063A3500FA0365 /* CredentialsManager.swift */; };
+		5194D56F27063A3500FA0365 /* CredentialsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D56D27063A3500FA0365 /* CredentialsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,8 @@
 		5194D55027060F6500FA0365 /* Ringgold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ringgold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5194D55627060F6500FA0365 /* Ringgold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ringgold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5194D55827060F6500FA0365 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		5194D56A2706390700FA0365 /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
+		5194D56D27063A3500FA0365 /* CredentialsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,10 @@
 		5194D54827060F6300FA0365 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				5194D54927060F6300FA0365 /* RinggoldApp.swift */,
+				5194D56A2706390700FA0365 /* AppDefaults.swift */,
 				5194D54A27060F6300FA0365 /* ContentView.swift */,
+				5194D56D27063A3500FA0365 /* CredentialsManager.swift */,
+				5194D54927060F6300FA0365 /* RinggoldApp.swift */,
 				5194D54B27060F6500FA0365 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -184,8 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5194D56E27063A3500FA0365 /* CredentialsManager.swift in Sources */,
 				5194D55B27060F6500FA0365 /* ContentView.swift in Sources */,
 				5194D55927060F6500FA0365 /* RinggoldApp.swift in Sources */,
+				5194D56B2706390700FA0365 /* AppDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,8 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5194D56F27063A3500FA0365 /* CredentialsManager.swift in Sources */,
 				5194D55C27060F6500FA0365 /* ContentView.swift in Sources */,
 				5194D55A27060F6500FA0365 /* RinggoldApp.swift in Sources */,
+				5194D56C2706390700FA0365 /* AppDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
