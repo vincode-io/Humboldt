@@ -13,6 +13,7 @@
 		5194D55C27060F6500FA0365 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D54A27060F6300FA0365 /* ContentView.swift */; };
 		5194D55D27060F6500FA0365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5194D54B27060F6500FA0365 /* Assets.xcassets */; };
 		5194D55E27060F6500FA0365 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5194D54B27060F6500FA0365 /* Assets.xcassets */; };
+		5194D56927060FEC00FA0365 /* Snippets in Frameworks */ = {isa = PBXBuildFile; productRef = 5194D56827060FEC00FA0365 /* Snippets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5194D56927060FEC00FA0365 /* Snippets in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,9 @@
 			dependencies = (
 			);
 			name = "Ringgold (iOS)";
+			packageProductDependencies = (
+				5194D56827060FEC00FA0365 /* Snippets */,
+			);
 			productName = "Ringgold (iOS)";
 			productReference = 5194D55027060F6500FA0365 /* Ringgold.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +147,9 @@
 				Base,
 			);
 			mainGroup = 5194D54327060F6300FA0365;
+			packageReferences = (
+				5194D56727060FEC00FA0365 /* XCRemoteSwiftPackageReference "snippets" */,
+			);
 			productRefGroup = 5194D55127060F6500FA0365 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -452,6 +460,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5194D56727060FEC00FA0365 /* XCRemoteSwiftPackageReference "snippets" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microdotblog/snippets.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5194D56827060FEC00FA0365 /* Snippets */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5194D56727060FEC00FA0365 /* XCRemoteSwiftPackageReference "snippets" */;
+			productName = Snippets;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5194D54427060F6300FA0365 /* Project object */;
 }
