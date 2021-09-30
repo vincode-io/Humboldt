@@ -10,13 +10,13 @@ import SwiftUI
 @main
 struct RinggoldApp: App {
 	
-	let frameWidth: CGFloat = 400
+	let frameWidth: CGFloat = 500
 	let frameHeight: CGFloat = 400
 
     var body: some Scene {
 		#if os(macOS)
         WindowGroup {
-            ContentView()
+            AuthenticationView()
 				.frame(minWidth: frameWidth, idealWidth: frameWidth, maxWidth: frameWidth, minHeight: frameHeight, idealHeight: frameHeight, maxHeight: frameHeight)
 				.onOpenURL { url in
 					handle(url: url)
@@ -24,7 +24,7 @@ struct RinggoldApp: App {
         }
 		#else
 		WindowGroup {
-			ContentView()
+			AuthenticationView()
 				.onOpenURL { url in
 					handle(url: url)
 				}
