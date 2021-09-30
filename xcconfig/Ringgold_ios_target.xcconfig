@@ -13,7 +13,6 @@
 //    DEVELOPMENT_TEAM = <Your Team ID>
 //    ORGANIZATION_IDENTIFIER = <Your Domain Name Reversed>
 //    CODE_SIGN_STYLE = Automatic
-//    DEVELOPER_ENTITLEMENTS = -dev
 //    PROVISIONING_PROFILE_SPECIFIER =
 //
 // And you should be able to build without code signing errors and without modifying
