@@ -10,6 +10,7 @@
 		51872A74270659D40078CF1A /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51872A73270659D40078CF1A /* AuthenticationModel.swift */; };
 		51872A75270659D40078CF1A /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51872A73270659D40078CF1A /* AuthenticationModel.swift */; };
 		51872A7727065C750078CF1A /* Snippets in Frameworks */ = {isa = PBXBuildFile; productRef = 51872A7627065C750078CF1A /* Snippets */; };
+		51872A7A270676B40078CF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51872A79270676B40078CF1A /* AppDelegate.swift */; };
 		5194D55927060F6500FA0365 /* RinggoldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D54927060F6300FA0365 /* RinggoldApp.swift */; };
 		5194D55A27060F6500FA0365 /* RinggoldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D54927060F6300FA0365 /* RinggoldApp.swift */; };
 		5194D55B27060F6500FA0365 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D54A27060F6300FA0365 /* AuthenticationView.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		51872A73270659D40078CF1A /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		51872A7827066FDA0078CF1A /* iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS.entitlements; sourceTree = "<group>"; };
+		51872A79270676B40078CF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5194D54927060F6300FA0365 /* RinggoldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RinggoldApp.swift; sourceTree = "<group>"; };
 		5194D54A27060F6300FA0365 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		5194D54B27060F6500FA0365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				5194D55827060F6500FA0365 /* macOS.entitlements */,
 				5194D5862706427A00FA0365 /* Info.plist */,
+				51872A79270676B40078CF1A /* AppDelegate.swift */,
 			);
 			path = macOS;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51872A7A270676B40078CF1A /* AppDelegate.swift in Sources */,
 				5194D56F27063A3500FA0365 /* TokenManager.swift in Sources */,
 				51872A75270659D40078CF1A /* AuthenticationModel.swift in Sources */,
 				5194D55C27060F6500FA0365 /* AuthenticationView.swift in Sources */,

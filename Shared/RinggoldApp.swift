@@ -10,6 +10,10 @@ import SwiftUI
 @main
 struct RinggoldApp: App {
 	
+	#if os(macOS)
+	@NSApplicationDelegateAdaptor(AppDelegate.self) private var delegate
+	#endif
+
 	let frameWidth: CGFloat = 500
 	let frameHeight: CGFloat = 400
 
