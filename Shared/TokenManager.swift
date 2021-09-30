@@ -1,5 +1,5 @@
 //
-//  CredentialsManager.swift
+//  TokenManager.swift
 //  Ringgold
 //
 //  Created by Maurice Parker on 9/30/21.
@@ -8,11 +8,11 @@
 import Foundation
 import Snippets
 
-public enum CredentialsManagerError: Error {
+public enum TokenManagerError: Error {
 	case unhandledError(status: OSStatus)
 }
 
-public struct CredentialsManager {
+public struct TokenManager {
 	
 	private static var keychainGroup: String? = {
 		guard let appGroup = Bundle.main.object(forInfoDictionaryKey: "AppGroup") as? String else {
@@ -46,7 +46,7 @@ public struct CredentialsManager {
 	
 }
 
-private extension CredentialsManager {
+private extension TokenManager {
 	
 	static func storeToken(_ token: String, server: String, username: String) throws {
 
@@ -71,7 +71,7 @@ private extension CredentialsManager {
 		case errSecDuplicateItem:
 			break
 		default:
-			throw CredentialsManagerError.unhandledError(status: status)
+			throw TokenManagerError.unhandledError(status: status)
 		}
 		
 		var deleteQuery = query
@@ -80,7 +80,7 @@ private extension CredentialsManager {
 		
 		let addStatus = SecItemAdd(query as CFDictionary, nil)
 		if addStatus != errSecSuccess {
-			throw CredentialsManagerError.unhandledError(status: status)
+			throw TokenManagerError.unhandledError(status: status)
 		}
 
 	}
@@ -107,7 +107,7 @@ private extension CredentialsManager {
 		}
 		
 		guard status == errSecSuccess else {
-			throw CredentialsManagerError.unhandledError(status: status)
+			throw TokenManagerError.unhandledError(status: status)
 		}
 		
 		guard let existingItem = item as? [String : Any],
@@ -136,7 +136,7 @@ private extension CredentialsManager {
 		
 		let status = SecItemDelete(query as CFDictionary)
 		guard status == errSecSuccess || status == errSecItemNotFound else {
-			throw CredentialsManagerError.unhandledError(status: status)
+			throw TokenManagerError.unhandledError(status: status)
 		}
 		
 	}
