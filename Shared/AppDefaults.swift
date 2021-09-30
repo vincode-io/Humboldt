@@ -19,15 +19,15 @@ final class AppDefaults {
 	}()
 	
 	struct Key {
-		static let userID = "userID"
+		static let username = "userID"
 	}
 
-	var userID: String? {
+	var username: String? {
 		get {
-			Self.string(for: Key.userID)
+			Self.string(for: Key.username)
 		}
 		set {
-			Self.setString(for: Key.userID, newValue)
+			Self.setString(for: Key.username, newValue)
 		}
 	}
 

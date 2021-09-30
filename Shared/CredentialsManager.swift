@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Snippets
 
 public enum CredentialsManagerError: Error {
 	case unhandledError(status: OSStatus)
@@ -21,8 +22,33 @@ public struct CredentialsManager {
 		let appGroupSuffix = appGroup.suffix(appGroup.count - 6)
 		return "\(appIdentifierPrefix)\(appGroupSuffix)"
 	}()
+	
+	private static var server: String = {
+		let microBlogConfig = Snippets.Configuration.microblogConfiguration(token: "")
+		let urlComponents = URLComponents(string: microBlogConfig.microblogEndpoint)
+		return urlComponents!.host!
+	}()
 
-	public static func storeToken(_ token: String, server: String, username: String) throws {
+	public static func storeToken(_ token: String) throws {
+		guard let username = AppDefaults.shared.username else { return }
+		try storeToken(token, server: server, username: username)
+	}
+	
+	static func retrieveToken() throws -> String? {
+		guard let username = AppDefaults.shared.username else { return nil }
+		return try retrieveToken(server: server, username: username)
+	}
+	
+	static func removeToken() throws {
+		guard let username = AppDefaults.shared.username else { return }
+		try removeToken(server: server, username: username)
+	}
+	
+}
+
+private extension CredentialsManager {
+	
+	static func storeToken(_ token: String, server: String, username: String) throws {
 
 		var query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,
 									kSecUseDataProtectionKeychain as String: true,
@@ -59,7 +85,7 @@ public struct CredentialsManager {
 
 	}
 	
-	public static func retrieveToken(server: String, username: String) throws -> String? {
+	static func retrieveToken(server: String, username: String) throws -> String? {
 		
 		var query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,
 									kSecUseDataProtectionKeychain as String: true,
@@ -94,7 +120,7 @@ public struct CredentialsManager {
 		
 	}
 	
-	public static func removeToken(_ token: String, server: String, username: String) throws {
+	static func removeToken(server: String, username: String) throws {
 		
 		var query: [String: Any] = [kSecClass as String: kSecClassInternetPassword,
 									kSecUseDataProtectionKeychain as String: true,
@@ -114,5 +140,5 @@ public struct CredentialsManager {
 		}
 		
 	}
-	
+
 }

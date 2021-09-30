@@ -18,6 +18,7 @@
 		5194D56C2706390700FA0365 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D56A2706390700FA0365 /* AppDefaults.swift */; };
 		5194D56E27063A3500FA0365 /* CredentialsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D56D27063A3500FA0365 /* CredentialsManager.swift */; };
 		5194D56F27063A3500FA0365 /* CredentialsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D56D27063A3500FA0365 /* CredentialsManager.swift */; };
+		5194D58A27064D6B00FA0365 /* Snippets in Frameworks */ = {isa = PBXBuildFile; productRef = 5194D58927064D6B00FA0365 /* Snippets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5194D58A27064D6B00FA0365 /* Snippets in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +69,7 @@
 				5194D583270641EF00FA0365 /* iOS */,
 				5194D57027063C4400FA0365 /* xcconfig */,
 				5194D55127060F6500FA0365 /* Products */,
+				5194D58827064D6B00FA0365 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +125,13 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
+		5194D58827064D6B00FA0365 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,6 +169,9 @@
 			dependencies = (
 			);
 			name = "Ringgold (macOS)";
+			packageProductDependencies = (
+				5194D58927064D6B00FA0365 /* Snippets */,
+			);
 			productName = "Ringgold (macOS)";
 			productReference = 5194D55627060F6500FA0365 /* Ringgold.app */;
 			productType = "com.apple.product-type.application";
@@ -356,6 +369,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		5194D56827060FEC00FA0365 /* Snippets */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5194D56727060FEC00FA0365 /* XCRemoteSwiftPackageReference "snippets" */;
+			productName = Snippets;
+		};
+		5194D58927064D6B00FA0365 /* Snippets */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5194D56727060FEC00FA0365 /* XCRemoteSwiftPackageReference "snippets" */;
 			productName = Snippets;
