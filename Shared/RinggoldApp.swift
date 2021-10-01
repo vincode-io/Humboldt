@@ -24,6 +24,7 @@ struct RinggoldApp: App {
         WindowGroup {
             AuthenticationView(temporaryToken: $temporaryToken)
 				.frame(minWidth: frameWidth, idealWidth: frameWidth, maxWidth: frameWidth, minHeight: frameHeight, idealHeight: frameHeight, maxHeight: frameHeight)
+				.handlesExternalEvents(preferring: Set(arrayLiteral: "*"), allowing: Set(arrayLiteral: "*")) // activate existing window if exists
 				.onOpenURL { url in
 					handle(url: url)
 				}

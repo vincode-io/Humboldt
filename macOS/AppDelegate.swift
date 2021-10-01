@@ -9,6 +9,10 @@ import AppKit
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+	override init() {
+		NSWindow.allowsAutomaticWindowTabbing
+	}
+	
 	func applicationDidFinishLaunching(_ notification: Notification) {
 		let mainMenu = NSApplication.shared.mainMenu!
 		for i in 1..<mainMenu.numberOfItems {
