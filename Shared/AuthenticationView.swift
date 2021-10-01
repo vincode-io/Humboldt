@@ -9,26 +9,55 @@ import SwiftUI
 
 struct AuthenticationView: View {
 	
+	@Binding var temporaryToken: String
 	@StateObject private var viewModel = AuthenticationModel()
 
-    var body: some View {
-		VStack {
-			Color.clear
-			Form {
-				Text("You need to sign in to use the Micro.blog Shortcut actions.\n\nEnter your Micro.blog email address. You'll receive an email with a link to confirm signing in.")
-				emailTextField
-				HStack {
-					Spacer()
-					Button("Sign In") {
-						viewModel.requestUserLoginEmail()
-					}
-					Spacer()
-				}
+	var body: some View {
+		mainContent
+			.onAppear {
+				viewModel.start()
 			}
-			.frame(minWidth: 400, idealWidth: 400, maxWidth: 400, minHeight: 400)
-			Color.clear
+			.onChange(of: temporaryToken) { tempToken in
+				viewModel.processTemporaryToken(tempToken)
+			}
+	}
+	
+	@ViewBuilder var mainContent: some View {
+		if !viewModel.authenticated {
+			VStack {
+				Color.clear
+				Form {
+					Text("You need to sign in to use the Micro.blog Shortcut actions.\n\nEnter your Micro.blog email address. You'll receive an email with a link to confirm signing in.")
+					emailTextField
+					HStack {
+						Spacer()
+						Button("Sign In") {
+							viewModel.requestUserLoginEmail()
+						}
+						Spacer()
+					}
+				}
+				.frame(minWidth: 400, idealWidth: 400, maxWidth: 400, minHeight: 400)
+				Color.clear
+			}
+		} else {
+			VStack {
+				Color.clear
+				Form {
+					Text("You have been authenticated and are ready to run Micro.blog Shortcuts.")
+					HStack {
+						Spacer()
+						Button("Sign Out") {
+							viewModel.signOff()
+						}
+						Spacer()
+					}
+				}
+				.frame(minWidth: 400, idealWidth: 400, maxWidth: 400, minHeight: 400)
+				Color.clear
+			}
 		}
-    }
+	}
 	
 	@ViewBuilder var emailTextField: some View {
 		#if os(iOS)
