@@ -126,7 +126,6 @@ private extension TokenManager {
 									kSecUseDataProtectionKeychain as String: true,
 									kSecAttrAccount as String: username,
 									kSecAttrServer as String: server,
-									kSecMatchLimit as String: kSecMatchLimitOne,
 									kSecReturnAttributes as String: true,
 									kSecReturnData as String: true]
 		

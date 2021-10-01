@@ -17,6 +17,13 @@ struct AuthenticationView: View {
 			.onAppear {
 				viewModel.start()
 			}
+			.alert(isPresented: $viewModel.showError) {
+				Alert(title: Text("Error"),
+					  message: Text(viewModel.error!.localizedDescription),
+					  dismissButton: Alert.Button.cancel({
+						viewModel.error = nil
+				}))
+			}
 			.onChange(of: temporaryToken) { tempToken in
 				viewModel.processTemporaryToken(tempToken)
 			}
