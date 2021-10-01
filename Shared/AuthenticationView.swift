@@ -49,6 +49,7 @@ struct AuthenticationView: View {
 						Button("Sign In") {
 							viewModel.requestUserLoginEmail()
 						}
+						.keyboardShortcut(.defaultAction)
 						Spacer()
 					}
 				}
