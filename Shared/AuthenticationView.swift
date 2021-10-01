@@ -24,6 +24,13 @@ struct AuthenticationView: View {
 						viewModel.error = nil
 				})
 			}
+			.alert(isPresented: $viewModel.showConfirmation) {
+				Alert(title: Text("Request Sent"),
+					  message: Text("Your email request has been sent. Check your email for the sign-in email."),
+					  dismissButton: Alert.Button.default(Text("Great!")) {
+						viewModel.error = nil
+				})
+			}
 			.onChange(of: temporaryToken) { tempToken in
 				viewModel.processTemporaryToken(tempToken)
 				temporaryToken = ""
