@@ -11,6 +11,14 @@
 		51872A75270659D40078CF1A /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51872A73270659D40078CF1A /* AuthenticationModel.swift */; };
 		51872A7727065C750078CF1A /* Snippets in Frameworks */ = {isa = PBXBuildFile; productRef = 51872A7627065C750078CF1A /* Snippets */; };
 		51872A7A270676B40078CF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51872A79270676B40078CF1A /* AppDelegate.swift */; };
+		51872A7D2707B1B80078CF1A /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 51872A7C2707B1B80078CF1A /* Intents.intentdefinition */; };
+		51872A7E2707B1B80078CF1A /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 51872A7C2707B1B80078CF1A /* Intents.intentdefinition */; };
+		51872A972707B5200078CF1A /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51872A842707B2410078CF1A /* Intents.framework */; platformFilter = maccatalyst; };
+		51872A9E2707B5200078CF1A /* IntentsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51872A962707B5200078CF1A /* IntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		51872AAB2707B5F60078CF1A /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51872AA82707B5F60078CF1A /* IntentHandler.swift */; };
+		51872AB22707B75C0078CF1A /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51872A842707B2410078CF1A /* Intents.framework */; platformFilter = maccatalyst; };
+		51872AB92707B75C0078CF1A /* IntentsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51872AB12707B75C0078CF1A /* IntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		51872AC02707B7E30078CF1A /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51872ABF2707B7E30078CF1A /* IntentHandler.swift */; };
 		5194D55927060F6500FA0365 /* RinggoldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D54927060F6300FA0365 /* RinggoldApp.swift */; };
 		5194D55A27060F6500FA0365 /* RinggoldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D54927060F6300FA0365 /* RinggoldApp.swift */; };
 		5194D55B27060F6500FA0365 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D54A27060F6300FA0365 /* AuthenticationView.swift */; };
@@ -22,12 +30,68 @@
 		5194D56E27063A3500FA0365 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D56D27063A3500FA0365 /* TokenManager.swift */; };
 		5194D56F27063A3500FA0365 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D56D27063A3500FA0365 /* TokenManager.swift */; };
 		5194D58A27064D6B00FA0365 /* Snippets in Frameworks */ = {isa = PBXBuildFile; productRef = 5194D58927064D6B00FA0365 /* Snippets */; };
+		51ADB0CA2707C00800A6877F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 51872A7C2707B1B80078CF1A /* Intents.intentdefinition */; };
+		51ADB0CB2707C00900A6877F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 51872A7C2707B1B80078CF1A /* Intents.intentdefinition */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		51872A9C2707B5200078CF1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5194D54427060F6300FA0365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51872A952707B5200078CF1A;
+			remoteInfo = IntentsExtension;
+		};
+		51872AB72707B75C0078CF1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5194D54427060F6300FA0365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51872AB02707B75C0078CF1A;
+			remoteInfo = IntentsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51872A902707B2410078CF1A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				51872A9E2707B5200078CF1A /* IntentsExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51872ABD2707B75C0078CF1A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				51872AB92707B75C0078CF1A /* IntentsExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		51872A73270659D40078CF1A /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
 		51872A7827066FDA0078CF1A /* iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOS.entitlements; sourceTree = "<group>"; };
 		51872A79270676B40078CF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51872A7C2707B1B80078CF1A /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		51872A842707B2410078CF1A /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		51872A912707B2B10078CF1A /* Ringgold_iOS_intents_target.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Ringgold_iOS_intents_target.xcconfig; sourceTree = "<group>"; };
+		51872A962707B5200078CF1A /* IntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		51872AA72707B5C00078CF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51872AA82707B5F60078CF1A /* IntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		51872AAC2707B6E00078CF1A /* Ringgold_macOS_intents_target.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Ringgold_macOS_intents_target.xcconfig; sourceTree = "<group>"; };
+		51872AB12707B75C0078CF1A /* IntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		51872ABF2707B7E30078CF1A /* IntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		51872AC12707B8030078CF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51872AC22707BA0E0078CF1A /* Ringgold_iOS_IntentsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ringgold_iOS_IntentsExtension.entitlements; sourceTree = "<group>"; };
+		51872AC32707BA5F0078CF1A /* Ringgold_macOS_IntentsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ringgold_macOS_IntentsExtension.entitlements; sourceTree = "<group>"; };
 		5194D54927060F6300FA0365 /* RinggoldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RinggoldApp.swift; sourceTree = "<group>"; };
 		5194D54A27060F6300FA0365 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		5194D54B27060F6500FA0365 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +112,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		51872A932707B5200078CF1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51872A972707B5200078CF1A /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51872AAE2707B75C0078CF1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51872AB22707B75C0078CF1A /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5194D54D27060F6500FA0365 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -67,6 +147,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51872A7B2707B18E0078CF1A /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				51872A7C2707B1B80078CF1A /* Intents.intentdefinition */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		51872AA52707B5640078CF1A /* IntentsExtension */ = {
+			isa = PBXGroup;
+			children = (
+				51872AC22707BA0E0078CF1A /* Ringgold_iOS_IntentsExtension.entitlements */,
+				51872AA72707B5C00078CF1A /* Info.plist */,
+				51872AA82707B5F60078CF1A /* IntentHandler.swift */,
+			);
+			path = IntentsExtension;
+			sourceTree = "<group>";
+		};
+		51872ABE2707B77A0078CF1A /* IntentsExtension */ = {
+			isa = PBXGroup;
+			children = (
+				51872AC32707BA5F0078CF1A /* Ringgold_macOS_IntentsExtension.entitlements */,
+				51872AC12707B8030078CF1A /* Info.plist */,
+				51872ABF2707B7E30078CF1A /* IntentHandler.swift */,
+			);
+			path = IntentsExtension;
+			sourceTree = "<group>";
+		};
 		5194D54327060F6300FA0365 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +196,7 @@
 				5194D54927060F6300FA0365 /* RinggoldApp.swift */,
 				5194D56D27063A3500FA0365 /* TokenManager.swift */,
 				5194D54B27060F6500FA0365 /* Assets.xcassets */,
+				51872A7B2707B18E0078CF1A /* Intents */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -97,6 +206,8 @@
 			children = (
 				5194D55027060F6500FA0365 /* Ringgold.app */,
 				5194D55627060F6500FA0365 /* Ringgold.app */,
+				51872A962707B5200078CF1A /* IntentsExtension.appex */,
+				51872AB12707B75C0078CF1A /* IntentsExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +215,7 @@
 		5194D55727060F6500FA0365 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				51872ABE2707B77A0078CF1A /* IntentsExtension */,
 				5194D55827060F6500FA0365 /* macOS.entitlements */,
 				5194D5862706427A00FA0365 /* Info.plist */,
 				51872A79270676B40078CF1A /* AppDelegate.swift */,
@@ -120,7 +232,9 @@
 				5194D57727063D0500FA0365 /* Ringgold_iOS_target_common.xcconfig */,
 				5194D57827063D0600FA0365 /* Ringgold_macOS_target_common.xcconfig */,
 				5194D57227063CA100FA0365 /* Ringgold_ios_target.xcconfig */,
+				51872A912707B2B10078CF1A /* Ringgold_iOS_intents_target.xcconfig */,
 				5194D57127063CA100FA0365 /* Ringgold_macOS_target.xcconfig */,
+				51872AAC2707B6E00078CF1A /* Ringgold_macOS_intents_target.xcconfig */,
 			);
 			path = xcconfig;
 			sourceTree = "<group>";
@@ -128,6 +242,7 @@
 		5194D583270641EF00FA0365 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				51872AA52707B5640078CF1A /* IntentsExtension */,
 				51872A7827066FDA0078CF1A /* iOS.entitlements */,
 				5194D5842706424200FA0365 /* Info.plist */,
 			);
@@ -137,6 +252,7 @@
 		5194D58827064D6B00FA0365 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51872A842707B2410078CF1A /* Intents.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,6 +260,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		51872A952707B5200078CF1A /* IntentsExtension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51872A9F2707B5200078CF1A /* Build configuration list for PBXNativeTarget "IntentsExtension (iOS)" */;
+			buildPhases = (
+				51872A922707B5200078CF1A /* Sources */,
+				51872A932707B5200078CF1A /* Frameworks */,
+				51872A942707B5200078CF1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IntentsExtension (iOS)";
+			productName = IntentsExtension;
+			productReference = 51872A962707B5200078CF1A /* IntentsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		51872AB02707B75C0078CF1A /* IntentsExtension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51872ABA2707B75C0078CF1A /* Build configuration list for PBXNativeTarget "IntentsExtension (macOS)" */;
+			buildPhases = (
+				51872AAD2707B75C0078CF1A /* Sources */,
+				51872AAE2707B75C0078CF1A /* Frameworks */,
+				51872AAF2707B75C0078CF1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IntentsExtension (macOS)";
+			productName = IntentsExtension;
+			productReference = 51872AB12707B75C0078CF1A /* IntentsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5194D54F27060F6500FA0365 /* Ringgold (iOS) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5194D56127060F6500FA0365 /* Build configuration list for PBXNativeTarget "Ringgold (iOS)" */;
@@ -152,10 +302,12 @@
 				5194D54D27060F6500FA0365 /* Frameworks */,
 				5194D54E27060F6500FA0365 /* Resources */,
 				5194D58227063F8700FA0365 /* Run VerifyNoBuildSettings */,
+				51872A902707B2410078CF1A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				51872A9D2707B5200078CF1A /* PBXTargetDependency */,
 			);
 			name = "Ringgold (iOS)";
 			packageProductDependencies = (
@@ -172,10 +324,13 @@
 				5194D55227060F6500FA0365 /* Sources */,
 				5194D55327060F6500FA0365 /* Frameworks */,
 				5194D55427060F6500FA0365 /* Resources */,
+				51ADB0C92707BF2F00A6877F /* Run VerifyNoBuildSettings */,
+				51872ABD2707B75C0078CF1A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				51872AB82707B75C0078CF1A /* PBXTargetDependency */,
 			);
 			name = "Ringgold (macOS)";
 			packageProductDependencies = (
@@ -195,6 +350,14 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					51872A952707B5200078CF1A = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
+					51872AB02707B75C0078CF1A = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
 					5194D54F27060F6500FA0365 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -221,11 +384,27 @@
 			targets = (
 				5194D54F27060F6500FA0365 /* Ringgold (iOS) */,
 				5194D55527060F6500FA0365 /* Ringgold (macOS) */,
+				51872A952707B5200078CF1A /* IntentsExtension (iOS) */,
+				51872AB02707B75C0078CF1A /* IntentsExtension (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		51872A942707B5200078CF1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51872AAF2707B75C0078CF1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5194D54E27060F6500FA0365 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,13 +442,50 @@
 			shellPath = /bin/sh;
 			shellScript = "xcrun -sdk macosx swiftc -target x86_64-macosx10.11  tools/VerifyNoBuildSettings.swift -o $CONFIGURATION_TEMP_DIR/VerifyNoBS\n$CONFIGURATION_TEMP_DIR/VerifyNoBS ${PROJECT_NAME}.xcodeproj/project.pbxproj\n\n\nif [ $? -ne 0 ]\nthen\n   echo \"error: Build Setting were found in the project.pbxproj file.  Most likely you didn't intend to change this file and should revert it.\"\n   exit 1\nfi\n";
 		};
+		51ADB0C92707BF2F00A6877F /* Run VerifyNoBuildSettings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run VerifyNoBuildSettings";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcrun -sdk macosx swiftc -target x86_64-macosx10.11  tools/VerifyNoBuildSettings.swift -o $CONFIGURATION_TEMP_DIR/VerifyNoBS\n$CONFIGURATION_TEMP_DIR/VerifyNoBS ${PROJECT_NAME}.xcodeproj/project.pbxproj\n\n\nif [ $? -ne 0 ]\nthen\n   echo \"error: Build Setting were found in the project.pbxproj file.  Most likely you didn't intend to change this file and should revert it.\"\n   exit 1\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		51872A922707B5200078CF1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51ADB0CB2707C00900A6877F /* Intents.intentdefinition in Sources */,
+				51872AAB2707B5F60078CF1A /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51872AAD2707B75C0078CF1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51ADB0CA2707C00800A6877F /* Intents.intentdefinition in Sources */,
+				51872AC02707B7E30078CF1A /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5194D54C27060F6500FA0365 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51872A7D2707B1B80078CF1A /* Intents.intentdefinition in Sources */,
 				5194D56E27063A3500FA0365 /* TokenManager.swift in Sources */,
 				51872A74270659D40078CF1A /* AuthenticationModel.swift in Sources */,
 				5194D55B27060F6500FA0365 /* AuthenticationView.swift in Sources */,
@@ -282,6 +498,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51872A7E2707B1B80078CF1A /* Intents.intentdefinition in Sources */,
 				51872A7A270676B40078CF1A /* AppDelegate.swift in Sources */,
 				5194D56F27063A3500FA0365 /* TokenManager.swift in Sources */,
 				51872A75270659D40078CF1A /* AuthenticationModel.swift in Sources */,
@@ -293,7 +510,48 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		51872A9D2707B5200078CF1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51872A952707B5200078CF1A /* IntentsExtension (iOS) */;
+			targetProxy = 51872A9C2707B5200078CF1A /* PBXContainerItemProxy */;
+		};
+		51872AB82707B75C0078CF1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51872AB02707B75C0078CF1A /* IntentsExtension (macOS) */;
+			targetProxy = 51872AB72707B75C0078CF1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		51872AA02707B5200078CF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51872A912707B2B10078CF1A /* Ringgold_iOS_intents_target.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		51872AA12707B5200078CF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51872A912707B2B10078CF1A /* Ringgold_iOS_intents_target.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		51872ABB2707B75C0078CF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51872AAC2707B6E00078CF1A /* Ringgold_macOS_intents_target.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		51872ABC2707B75C0078CF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51872AAC2707B6E00078CF1A /* Ringgold_macOS_intents_target.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
 		5194D55F27060F6500FA0365 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5194D58027063E8300FA0365 /* Ringgold_project_debug.xcconfig */;
@@ -339,6 +597,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		51872A9F2707B5200078CF1A /* Build configuration list for PBXNativeTarget "IntentsExtension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51872AA02707B5200078CF1A /* Debug */,
+				51872AA12707B5200078CF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51872ABA2707B75C0078CF1A /* Build configuration list for PBXNativeTarget "IntentsExtension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51872ABB2707B75C0078CF1A /* Debug */,
+				51872ABC2707B75C0078CF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5194D54727060F6300FA0365 /* Build configuration list for PBXProject "Ringgold" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
