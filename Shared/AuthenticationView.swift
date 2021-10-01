@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AuthenticationView: View {
 	
+	@Environment(\.openURL) var openURL
+	
 	@Binding var temporaryToken: String
 	@StateObject private var viewModel = AuthenticationModel()
 
@@ -48,6 +50,9 @@ struct AuthenticationView: View {
 						Spacer()
 						Button("Sign In") {
 							viewModel.requestUserLoginEmail()
+							#if canImport(UIKit)
+							UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+							#endif
 						}
 						.keyboardShortcut(.defaultAction)
 						Spacer()
@@ -63,27 +68,48 @@ struct AuthenticationView: View {
 					Text("You have been authenticated and are ready to run Micro.blog Shortcuts.")
 					HStack {
 						Spacer()
+						shortcutsLink
+						Spacer()
+					}
+					HStack {
+						Spacer()
 						Button("Sign Out") {
 							viewModel.signOff()
 						}
 						Spacer()
 					}
 				}
-				.frame(minWidth: 400, idealWidth: 400, maxWidth: 400, minHeight: 400)
+				.frame(minWidth: 350, idealWidth: 350, maxWidth: 350, minHeight: 400)
 				Color.clear
 			}
 		}
 	}
 	
 	@ViewBuilder var emailTextField: some View {
-		#if os(iOS)
-		TextField("Email", text: $viewModel.email)
-			.disableAutocorrection(true)
-			.autocapitalization(UITextAutocapitalizationType.none)
-		#else
+		#if os(macOS)
 		TextField("Email", text: $viewModel.email)
 			.disableAutocorrection(true)
 			.padding()
+		#else
+		TextField("Email", text: $viewModel.email)
+			.disableAutocorrection(true)
+			.keyboardType(.emailAddress)
+			.autocapitalization(UITextAutocapitalizationType.none)
+		#endif
+	}
+	
+	@ViewBuilder var shortcutsLink: some View {
+		#if os(macOS)
+		Button("Open Shortcuts") {
+			openURL(URL(string: "shortcuts://")!)
+		}
+		.keyboardShortcut(.defaultAction)
+		.padding()
+		#else
+		Button("Open Shortcuts") {
+			openURL(URL(string: "shortcuts://")!)
+		}
+		.keyboardShortcut(.defaultAction)
 		#endif
 	}
 	
