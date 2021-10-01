@@ -54,6 +54,7 @@ struct AuthenticationView: View {
 							UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
 							#endif
 						}
+						.disabled(!viewModel.email.uuIsValidEmail())
 						.keyboardShortcut(.defaultAction)
 						Spacer()
 					}
