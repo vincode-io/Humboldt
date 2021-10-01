@@ -9,6 +9,15 @@ import Foundation
 import SwiftUI
 import Snippets
 
+public enum AuthenticationModelError: LocalizedError {
+	case invalidOrMissingToken
+	
+	public var errorDescription: String? {
+		return NSLocalizedString("The email token is no longer valid. Please request another one.", comment: "Invalid token")
+	}
+	
+}
+
 class AuthenticationModel: ObservableObject {
 	
 	@Published var authenticated: Bool = false
@@ -51,11 +60,20 @@ class AuthenticationModel: ObservableObject {
 	
 	func processTemporaryToken(_ temporaryToken: String) {
 		Snippets.Microblog.requestPermanentTokenFromTemporaryToken(token: temporaryToken) { (requestError, permanentToken) in
+			guard requestError == nil else { return }
+			
 			DispatchQueue.main.async {
-				if let requestError = requestError {
-					self.error = requestError
-					return
-				}
+				// For some reason we are getting called twice. Once with an error that isn't real and then
+				// with a token that works.
+				
+//				if let requestError = requestError {
+//					if requestError is Snippets.SnippetsError {
+//						self.error = AuthenticationModelError.invalidOrMissingToken
+//					} else {
+//						self.error = requestError
+//					}
+//					return
+//				}
 				
 				if let permanentToken = permanentToken {
 					do {
