@@ -29,7 +29,7 @@
 #include "./Ringgold_iOS_target_common.xcconfig"
 
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../../Frameworks
-CODE_SIGN_ENTITLEMENTS = iOS/IntentsExtension/Ringgold_iOS_IntentsExtension.entitlements
-INFOPLIST_FILE = iOS/IntentsExtension/Info.plist
+CODE_SIGN_ENTITLEMENTS = IntentsExtension/Ringgold_IntentsExtension.entitlements
+INFOPLIST_FILE = IntentsExtension/Info.plist
 PRODUCT_BUNDLE_IDENTIFIER = $(ORGANIZATION_IDENTIFIER).Ringgold.IntentsExtension
 PRODUCT_NAME = IntentsExtension

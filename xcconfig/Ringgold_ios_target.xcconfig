@@ -29,8 +29,8 @@
 #include "./Ringgold_iOS_target_common.xcconfig"
 
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
-INFOPLIST_FILE = iOS/Info.plist
-CODE_SIGN_ENTITLEMENTS = iOS/iOS.entitlements
+INFOPLIST_FILE = Ringgold/Info.plist
+CODE_SIGN_ENTITLEMENTS = Ringgold/Ringgold.entitlements
 PRODUCT_BUNDLE_IDENTIFIER = $(ORGANIZATION_IDENTIFIER).Ringgold
 PRODUCT_NAME = Ringgold
 

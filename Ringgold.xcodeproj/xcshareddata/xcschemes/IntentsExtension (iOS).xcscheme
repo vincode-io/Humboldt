@@ -17,7 +17,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "51872A952707B5200078CF1A"
                BuildableName = "IntentsExtension.appex"
-               BlueprintName = "IntentsExtension (iOS)"
+               BlueprintName = "IntentsExtension"
                ReferencedContainer = "container:Ringgold.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
