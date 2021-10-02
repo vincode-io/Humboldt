@@ -8,12 +8,18 @@
 import Foundation
 import Snippets
 
+public extension Notification.Name {
+	static let TokenDidChange = Notification.Name(rawValue: "TokenDidChange")
+}
+
 public enum TokenManagerError: Error {
 	case unhandledError(status: OSStatus)
 }
 
 public struct TokenManager {
 	
+	public static let tokenUserInfoKey = "token"
+
 	private static var keychainGroup: String? = {
 		guard let appGroup = Bundle.main.object(forInfoDictionaryKey: "AppGroup") as? String else {
 			return nil
@@ -67,6 +73,7 @@ private extension TokenManager {
 
 		switch status {
 		case errSecSuccess:
+			tokenDidChange(token)
 			return
 		case errSecDuplicateItem:
 			break
@@ -83,6 +90,7 @@ private extension TokenManager {
 			throw TokenManagerError.unhandledError(status: status)
 		}
 
+		tokenDidChange(token)
 	}
 	
 	static func retrieveToken(server: String, username: String) throws -> String? {
@@ -138,6 +146,13 @@ private extension TokenManager {
 			throw TokenManagerError.unhandledError(status: status)
 		}
 		
+		tokenDidChange(nil)
+	}
+	
+	static func tokenDidChange(_ token: String?) {
+		var userInfo = [AnyHashable: Any]()
+		userInfo[Self.tokenUserInfoKey] = token
+		NotificationCenter.default.post(name: .TokenDidChange, object: self, userInfo: userInfo)
 	}
 
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Snippets
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,9 +19,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		guard let windowScene = scene as? UIWindowScene else { return }
 
 		window = UIWindow(windowScene: windowScene)
-		let viewController = newSignInController()
 
-		window?.rootViewController = viewController
+		let token = try? TokenManager.retrieveToken()
+		if token != nil {
+			window?.rootViewController = authenticatedController()
+		} else {
+			window?.rootViewController = newSignInController()
+		}
 		
 		#if targetEnvironment(macCatalyst)
 		windowScene.sizeRestrictions?.minimumSize = CGSize(width: 400, height: 400)
@@ -28,14 +33,46 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		#endif
 		
 		window?.makeKeyAndVisible()
+		
+		NotificationCenter.default.addObserver(self, selector: #selector(tokenDidChange(_:)), name: .TokenDidChange, object: nil)
 	}
 
+	func scene(_ scene: UIScene, openURLContexts urlContexts: Set<UIOpenURLContext>) {
+		guard let url = urlContexts.first?.url,
+			  let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
+			  let temporaryToken = components.queryItems?.first?.value else {
+				  return
+			  }
+		processTemporaryToken(temporaryToken)
+	}
+	
 }
 
 private extension SceneDelegate {
 	
+	@objc func tokenDidChange(_ note: Notification) {
+		if note.userInfo?[TokenManager.tokenUserInfoKey] == nil {
+			window?.rootViewController = newSignInController()
+		} else {
+			window?.rootViewController = authenticatedController()
+		}
+	}
+	
 	func newSignInController() -> UIViewController {
 		return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SignInViewController")
+	}
+	
+	func authenticatedController() -> UIViewController {
+		return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AuthenticatedViewController")
+	}
+	
+	func processTemporaryToken(_ temporaryToken: String) {
+		Snippets.Microblog.requestPermanentTokenFromTemporaryToken(token: temporaryToken) { (requestError, permanentToken) in
+			guard requestError == nil, let permanentToken = permanentToken else { return }
+			DispatchQueue.main.async {
+				try? TokenManager.storeToken(permanentToken)
+			}
+		}
 	}
 	
 }

@@ -21,6 +21,7 @@
 		515FB1C92707EAB200B4FE65 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FB1C82707EAB200B4FE65 /* UIViewController+.swift */; };
 		515FB1CB2707EC5000B4FE65 /* Snippets in Frameworks */ = {isa = PBXBuildFile; productRef = 515FB1CA2707EC5000B4FE65 /* Snippets */; };
 		515FB1CD2707EC5800B4FE65 /* Snippets in Frameworks */ = {isa = PBXBuildFile; productRef = 515FB1CC2707EC5800B4FE65 /* Snippets */; };
+		515FB1CF2707EF8600B4FE65 /* AuthenticatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FB1CE2707EF8600B4FE65 /* AuthenticatedViewController.swift */; };
 		51872A972707B5200078CF1A /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51872A842707B2410078CF1A /* Intents.framework */; platformFilter = maccatalyst; };
 /* End PBXBuildFile section */
 
@@ -38,12 +39,10 @@
 		51499B032707DC3B00DBBD77 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		51499B042707DC3B00DBBD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		515FB1C82707EAB200B4FE65 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
-		51872A73270659D40078CF1A /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		515FB1CE2707EF8600B4FE65 /* AuthenticatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedViewController.swift; sourceTree = "<group>"; };
 		51872A842707B2410078CF1A /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		51872A912707B2B10078CF1A /* Ringgold_iOS_intents_target.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Ringgold_iOS_intents_target.xcconfig; sourceTree = "<group>"; };
 		51872A962707B5200078CF1A /* IntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		5194D54927060F6300FA0365 /* RinggoldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RinggoldApp.swift; sourceTree = "<group>"; };
-		5194D54A27060F6300FA0365 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		5194D56A2706390700FA0365 /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 		5194D56D27063A3500FA0365 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		5194D57227063CA100FA0365 /* Ringgold_ios_target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Ringgold_ios_target.xcconfig; sourceTree = "<group>"; };
@@ -80,6 +79,7 @@
 				51499B002707D7EC00DBBD77 /* Ringgold.entitlements */,
 				51499AFB2707D73D00DBBD77 /* Info.plist */,
 				51499AED2707D73C00DBBD77 /* AppDelegate.swift */,
+				515FB1CE2707EF8600B4FE65 /* AuthenticatedViewController.swift */,
 				51499AEF2707D73C00DBBD77 /* SceneDelegate.swift */,
 				51499AF12707D73C00DBBD77 /* SignInViewController.swift */,
 				515FB1C82707EAB200B4FE65 /* UIViewController+.swift */,
@@ -116,9 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				5194D56A2706390700FA0365 /* AppDefaults.swift */,
-				51872A73270659D40078CF1A /* AuthenticationModel.swift */,
-				5194D54A27060F6300FA0365 /* AuthenticationView.swift */,
-				5194D54927060F6300FA0365 /* RinggoldApp.swift */,
 				5194D56D27063A3500FA0365 /* TokenManager.swift */,
 			);
 			path = Shared;
@@ -265,6 +262,7 @@
 			files = (
 				51499AF22707D73C00DBBD77 /* SignInViewController.swift in Sources */,
 				515FB1C42707EA3C00B4FE65 /* AppDefaults.swift in Sources */,
+				515FB1CF2707EF8600B4FE65 /* AuthenticatedViewController.swift in Sources */,
 				515FB1C92707EAB200B4FE65 /* UIViewController+.swift in Sources */,
 				515FB1C62707EA4000B4FE65 /* TokenManager.swift in Sources */,
 				51499AEE2707D73C00DBBD77 /* AppDelegate.swift in Sources */,
