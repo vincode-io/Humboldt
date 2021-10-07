@@ -122,13 +122,11 @@ private extension PostHTMLIntentHandler {
 	
 	func configureSnippets(blogID: String? = nil) throws {
 		guard let token = try? TokenManager.retrieveToken() else {
-			print("********* Token not found!!!!")
 			throw PostHTMLIntentHandlerError.tokenRequired
 		}
 		let config = Snippets.Configuration.microblogConfiguration(token: token, uid: blogID)
 		Snippets.Configuration.timeline = config
 		Snippets.Configuration.publishing = config
 	}
-	
 	
 }
