@@ -15,6 +15,8 @@ class IntentHandler: INExtension {
 			return GetBlogIDIntentHandler()
 		case is PostHTMLIntent:
 			return PostHTMLIntentHandler()
+		case is UploadImageIntent:
+			return UploadImageIntentHandler()
 		default:
 			fatalError("Unrecognized Intent")
 		}
