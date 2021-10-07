@@ -22,8 +22,37 @@
 		515FB1CB2707EC5000B4FE65 /* Snippets in Frameworks */ = {isa = PBXBuildFile; productRef = 515FB1CA2707EC5000B4FE65 /* Snippets */; };
 		515FB1CD2707EC5800B4FE65 /* Snippets in Frameworks */ = {isa = PBXBuildFile; productRef = 515FB1CC2707EC5800B4FE65 /* Snippets */; };
 		515FB1CF2707EF8600B4FE65 /* AuthenticatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FB1CE2707EF8600B4FE65 /* AuthenticatedViewController.swift */; };
+		517F9E5E270E59A6004AD979 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E5D270E59A6004AD979 /* Intents.intentdefinition */; };
+		517F9E5F270E59A6004AD979 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E5D270E59A6004AD979 /* Intents.intentdefinition */; };
+		517F9E61270E6E0E004AD979 /* PostHTMLIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E60270E6E0E004AD979 /* PostHTMLIntentHandler.swift */; };
+		517F9E62270E6E0E004AD979 /* PostHTMLIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E60270E6E0E004AD979 /* PostHTMLIntentHandler.swift */; };
+		517F9E63270E7CD8004AD979 /* IntentsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51872A962707B5200078CF1A /* IntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		51872A972707B5200078CF1A /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51872A842707B2410078CF1A /* Intents.framework */; platformFilter = maccatalyst; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		517F9E64270E7CD8004AD979 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5194D54427060F6300FA0365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51872A952707B5200078CF1A;
+			remoteInfo = IntentsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		517F9E66270E7CD8004AD979 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				517F9E63270E7CD8004AD979 /* IntentsExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		51499AEB2707D73C00DBBD77 /* Ringgold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ringgold.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +69,8 @@
 		51499B042707DC3B00DBBD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		515FB1C82707EAB200B4FE65 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		515FB1CE2707EF8600B4FE65 /* AuthenticatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedViewController.swift; sourceTree = "<group>"; };
+		517F9E5D270E59A6004AD979 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		517F9E60270E6E0E004AD979 /* PostHTMLIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHTMLIntentHandler.swift; sourceTree = "<group>"; };
 		51872A842707B2410078CF1A /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		51872A912707B2B10078CF1A /* Ringgold_iOS_intents_target.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Ringgold_iOS_intents_target.xcconfig; sourceTree = "<group>"; };
 		51872A962707B5200078CF1A /* IntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,8 +146,10 @@
 		5194D54827060F6300FA0365 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				517F9E5D270E59A6004AD979 /* Intents.intentdefinition */,
 				5194D56A2706390700FA0365 /* AppDefaults.swift */,
 				5194D56D27063A3500FA0365 /* TokenManager.swift */,
+				517F9E60270E6E0E004AD979 /* PostHTMLIntentHandler.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -161,10 +194,12 @@
 				51499AE72707D73C00DBBD77 /* Sources */,
 				51499AE82707D73C00DBBD77 /* Frameworks */,
 				51499AE92707D73C00DBBD77 /* Resources */,
+				517F9E66270E7CD8004AD979 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				517F9E65270E7CD8004AD979 /* PBXTargetDependency */,
 			);
 			name = Ringgold;
 			packageProductDependencies = (
@@ -260,12 +295,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517F9E61270E6E0E004AD979 /* PostHTMLIntentHandler.swift in Sources */,
 				51499AF22707D73C00DBBD77 /* SignInViewController.swift in Sources */,
 				515FB1C42707EA3C00B4FE65 /* AppDefaults.swift in Sources */,
 				515FB1CF2707EF8600B4FE65 /* AuthenticatedViewController.swift in Sources */,
 				515FB1C92707EAB200B4FE65 /* UIViewController+.swift in Sources */,
 				515FB1C62707EA4000B4FE65 /* TokenManager.swift in Sources */,
 				51499AEE2707D73C00DBBD77 /* AppDelegate.swift in Sources */,
+				517F9E5E270E59A6004AD979 /* Intents.intentdefinition in Sources */,
 				51499AF02707D73C00DBBD77 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,11 +313,21 @@
 			files = (
 				51499B052707DC6800DBBD77 /* IntentHandler.swift in Sources */,
 				515FB1C72707EA4000B4FE65 /* TokenManager.swift in Sources */,
+				517F9E5F270E59A6004AD979 /* Intents.intentdefinition in Sources */,
 				515FB1C52707EA3C00B4FE65 /* AppDefaults.swift in Sources */,
+				517F9E62270E6E0E004AD979 /* PostHTMLIntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		517F9E65270E7CD8004AD979 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51872A952707B5200078CF1A /* IntentsExtension */;
+			targetProxy = 517F9E64270E7CD8004AD979 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		51499AF32707D73C00DBBD77 /* Main.storyboard */ = {
@@ -320,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 51872A912707B2B10078CF1A /* Ringgold_iOS_intents_target.xcconfig */;
 			buildSettings = {
+				SUPPORTS_MACCATALYST = YES;
 			};
 			name = Debug;
 		};
@@ -327,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 51872A912707B2B10078CF1A /* Ringgold_iOS_intents_target.xcconfig */;
 			buildSettings = {
+				SUPPORTS_MACCATALYST = YES;
 			};
 			name = Release;
 		};
