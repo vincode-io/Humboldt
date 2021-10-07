@@ -13,7 +13,6 @@ final class AppDefaults {
 	private init() {}
 	
 	static var store: UserDefaults = {
-		let appIdentifierPrefix = Bundle.main.object(forInfoDictionaryKey: "AppIdentifierPrefix") as! String
 		let organizationIdentifier = Bundle.main.object(forInfoDictionaryKey: "OrganizationIdentifier") as! String
 		let suiteName = "group.\(organizationIdentifier).Ringgold"
 		return UserDefaults.init(suiteName: suiteName)!
