@@ -32,6 +32,8 @@
 		517F9E6B270F0CC0004AD979 /* SnippetsIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E6A270F0CC0004AD979 /* SnippetsIntentHandler.swift */; };
 		517F9E6C270F0CC0004AD979 /* SnippetsIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E6A270F0CC0004AD979 /* SnippetsIntentHandler.swift */; };
 		51872A972707B5200078CF1A /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51872A842707B2410078CF1A /* Intents.framework */; platformFilter = maccatalyst; };
+		51EB1631270F50930079F40C /* UploadImageIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EB1630270F50930079F40C /* UploadImageIntentHandler.swift */; };
+		51EB1632270F50930079F40C /* UploadImageIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EB1630270F50930079F40C /* UploadImageIntentHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,7 @@
 		5194D57D27063E4500FA0365 /* Ringgold_project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Ringgold_project.xcconfig; sourceTree = "<group>"; };
 		5194D58027063E8300FA0365 /* Ringgold_project_debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Ringgold_project_debug.xcconfig; sourceTree = "<group>"; };
 		5194D58127063E8300FA0365 /* Ringgold_project_release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Ringgold_project_release.xcconfig; sourceTree = "<group>"; };
+		51EB1630270F50930079F40C /* UploadImageIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,7 @@
 				517F9E60270E6E0E004AD979 /* PostHTMLIntentHandler.swift */,
 				517F9E6A270F0CC0004AD979 /* SnippetsIntentHandler.swift */,
 				5194D56D27063A3500FA0365 /* TokenManager.swift */,
+				51EB1630270F50930079F40C /* UploadImageIntentHandler.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -308,6 +312,7 @@
 				515FB1C42707EA3C00B4FE65 /* AppDefaults.swift in Sources */,
 				515FB1CF2707EF8600B4FE65 /* AuthenticatedViewController.swift in Sources */,
 				515FB1C92707EAB200B4FE65 /* UIViewController+.swift in Sources */,
+				51EB1631270F50930079F40C /* UploadImageIntentHandler.swift in Sources */,
 				515FB1C62707EA4000B4FE65 /* TokenManager.swift in Sources */,
 				517F9E68270F0C2F004AD979 /* GetBlogIDIntentHandler.swift in Sources */,
 				51499AEE2707D73C00DBBD77 /* AppDelegate.swift in Sources */,
@@ -322,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				517F9E69270F0C2F004AD979 /* GetBlogIDIntentHandler.swift in Sources */,
+				51EB1632270F50930079F40C /* UploadImageIntentHandler.swift in Sources */,
 				51499B052707DC6800DBBD77 /* IntentHandler.swift in Sources */,
 				515FB1C72707EA4000B4FE65 /* TokenManager.swift in Sources */,
 				517F9E5F270E59A6004AD979 /* Intents.intentdefinition in Sources */,

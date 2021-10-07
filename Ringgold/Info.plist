@@ -47,6 +47,7 @@
 	<array>
 		<string>GetBlogIDIntent</string>
 		<string>PostHTMLIntent</string>
+		<string>UploadImageIntent</string>
 	</array>
 	<key>OrganizationIdentifier</key>
 	<string>$(ORGANIZATION_IDENTIFIER)</string>
