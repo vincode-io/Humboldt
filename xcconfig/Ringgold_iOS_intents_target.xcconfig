@@ -16,10 +16,10 @@
 //    PROVISIONING_PROFILE_SPECIFIER =
 //
 // And you should be able to build without code signing errors and without modifying
-// the NetNewsWire Xcode project.
+// the Ringgold Xcode project.
 //
-// Example:  if your NetNewsWire Xcode project file is at
-//     /Users/Shared/git/NetNewsWire/NetNewsWire.xcodeproj
+// Example:  if your Ringgold Xcode project file is at
+//     /Users/Shared/git/Ringgold/Ringgold.xcodeproj
 // create your DeveloperSettings.xcconfig file at
 //     /Users/Shared/git/SharedXcodeSettings/DeveloperSettings.xcconfig
 //
