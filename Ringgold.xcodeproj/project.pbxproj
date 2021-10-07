@@ -27,6 +27,10 @@
 		517F9E61270E6E0E004AD979 /* PostHTMLIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E60270E6E0E004AD979 /* PostHTMLIntentHandler.swift */; };
 		517F9E62270E6E0E004AD979 /* PostHTMLIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E60270E6E0E004AD979 /* PostHTMLIntentHandler.swift */; };
 		517F9E63270E7CD8004AD979 /* IntentsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51872A962707B5200078CF1A /* IntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		517F9E68270F0C2F004AD979 /* GetBlogIDIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E67270F0C2F004AD979 /* GetBlogIDIntentHandler.swift */; };
+		517F9E69270F0C2F004AD979 /* GetBlogIDIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E67270F0C2F004AD979 /* GetBlogIDIntentHandler.swift */; };
+		517F9E6B270F0CC0004AD979 /* SnippetsIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E6A270F0CC0004AD979 /* SnippetsIntentHandler.swift */; };
+		517F9E6C270F0CC0004AD979 /* SnippetsIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E6A270F0CC0004AD979 /* SnippetsIntentHandler.swift */; };
 		51872A972707B5200078CF1A /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51872A842707B2410078CF1A /* Intents.framework */; platformFilter = maccatalyst; };
 /* End PBXBuildFile section */
 
@@ -71,6 +75,8 @@
 		515FB1CE2707EF8600B4FE65 /* AuthenticatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedViewController.swift; sourceTree = "<group>"; };
 		517F9E5D270E59A6004AD979 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
 		517F9E60270E6E0E004AD979 /* PostHTMLIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHTMLIntentHandler.swift; sourceTree = "<group>"; };
+		517F9E67270F0C2F004AD979 /* GetBlogIDIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBlogIDIntentHandler.swift; sourceTree = "<group>"; };
+		517F9E6A270F0CC0004AD979 /* SnippetsIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetsIntentHandler.swift; sourceTree = "<group>"; };
 		51872A842707B2410078CF1A /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		51872A912707B2B10078CF1A /* Ringgold_iOS_intents_target.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Ringgold_iOS_intents_target.xcconfig; sourceTree = "<group>"; };
 		51872A962707B5200078CF1A /* IntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,8 +154,10 @@
 			children = (
 				517F9E5D270E59A6004AD979 /* Intents.intentdefinition */,
 				5194D56A2706390700FA0365 /* AppDefaults.swift */,
-				5194D56D27063A3500FA0365 /* TokenManager.swift */,
+				517F9E67270F0C2F004AD979 /* GetBlogIDIntentHandler.swift */,
 				517F9E60270E6E0E004AD979 /* PostHTMLIntentHandler.swift */,
+				517F9E6A270F0CC0004AD979 /* SnippetsIntentHandler.swift */,
+				5194D56D27063A3500FA0365 /* TokenManager.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -301,9 +309,11 @@
 				515FB1CF2707EF8600B4FE65 /* AuthenticatedViewController.swift in Sources */,
 				515FB1C92707EAB200B4FE65 /* UIViewController+.swift in Sources */,
 				515FB1C62707EA4000B4FE65 /* TokenManager.swift in Sources */,
+				517F9E68270F0C2F004AD979 /* GetBlogIDIntentHandler.swift in Sources */,
 				51499AEE2707D73C00DBBD77 /* AppDelegate.swift in Sources */,
 				517F9E5E270E59A6004AD979 /* Intents.intentdefinition in Sources */,
 				51499AF02707D73C00DBBD77 /* SceneDelegate.swift in Sources */,
+				517F9E6B270F0CC0004AD979 /* SnippetsIntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,11 +321,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517F9E69270F0C2F004AD979 /* GetBlogIDIntentHandler.swift in Sources */,
 				51499B052707DC6800DBBD77 /* IntentHandler.swift in Sources */,
 				515FB1C72707EA4000B4FE65 /* TokenManager.swift in Sources */,
 				517F9E5F270E59A6004AD979 /* Intents.intentdefinition in Sources */,
 				515FB1C52707EA3C00B4FE65 /* AppDefaults.swift in Sources */,
 				517F9E62270E6E0E004AD979 /* PostHTMLIntentHandler.swift in Sources */,
+				517F9E6C270F0CC0004AD979 /* SnippetsIntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -45,6 +45,7 @@
 	<string>Copyright © 2020-2021 Maurice C Parker. All rights reserved.</string>
 	<key>NSUserActivityTypes</key>
 	<array>
+		<string>GetBlogIDIntent</string>
 		<string>PostHTMLIntent</string>
 	</array>
 	<key>OrganizationIdentifier</key>

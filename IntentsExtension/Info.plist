@@ -34,6 +34,7 @@
 			<array/>
 			<key>IntentsSupported</key>
 			<array>
+				<string>GetBlogIDIntent</string>
 				<string>PostHTMLIntent</string>
 			</array>
 		</dict>

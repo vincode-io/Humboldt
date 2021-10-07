@@ -110,6 +110,10 @@
 						<dict>
 							<key>INIntentParameterPromptDialogCustom</key>
 							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>What is the${blogID}for this post?</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>bZumMr</string>
 							<key>INIntentParameterPromptDialogType</key>
 							<string>Primary</string>
 						</dict>
@@ -134,8 +138,6 @@
 							<string>Confirmation</string>
 						</dict>
 					</array>
-					<key>INIntentParameterSupportsDynamicEnumeration</key>
-					<true/>
 					<key>INIntentParameterSupportsResolution</key>
 					<true/>
 					<key>INIntentParameterTag</key>
@@ -146,23 +148,13 @@
 					<array>
 						<dict>
 							<key>INIntentParameterUnsupportedReasonCode</key>
-							<string>tokenRequired</string>
+							<string>required</string>
 							<key>INIntentParameterUnsupportedReasonCustom</key>
 							<true/>
 							<key>INIntentParameterUnsupportedReasonFormatString</key>
-							<string>You must sign in with the Ringgold app before using Shortcuts.</string>
+							<string>The${blogID}parameter is required.</string>
 							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
 							<string>ofvqKf</string>
-						</dict>
-						<dict>
-							<key>INIntentParameterUnsupportedReasonCode</key>
-							<string>unableToFetchBlogID</string>
-							<key>INIntentParameterUnsupportedReasonCustom</key>
-							<true/>
-							<key>INIntentParameterUnsupportedReasonFormatString</key>
-							<string>Unable to fetch blog id. Please try again later.</string>
-							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
-							<string>KutuIV</string>
 						</dict>
 					</array>
 				</dict>
@@ -329,13 +321,188 @@
 				</array>
 			</dict>
 			<key>INIntentTitle</key>
-			<string>Post HTML</string>
+			<string>Post HTML To Micro.blog</string>
 			<key>INIntentTitleID</key>
 			<string>v8dVc6</string>
 			<key>INIntentType</key>
 			<string>Custom</string>
 			<key>INIntentVerb</key>
 			<string>Post</string>
+		</dict>
+		<dict>
+			<key>INIntentCategory</key>
+			<string>generic</string>
+			<key>INIntentConfigurable</key>
+			<true/>
+			<key>INIntentDescriptionID</key>
+			<string>fxA1i0</string>
+			<key>INIntentLastParameterTag</key>
+			<integer>1</integer>
+			<key>INIntentManagedParameterCombinations</key>
+			<dict>
+				<key>blogID</key>
+				<dict>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Select a${blogID}</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>FhPpLk</string>
+					<key>INIntentParameterCombinationUpdatesLinked</key>
+					<true/>
+				</dict>
+			</dict>
+			<key>INIntentName</key>
+			<string>GetBlogID</string>
+			<key>INIntentParameterCombinations</key>
+			<dict>
+				<key>blogID</key>
+				<dict>
+					<key>INIntentParameterCombinationIsLinked</key>
+					<true/>
+					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
+					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Select a${blogID}</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>n5SSM7</string>
+				</dict>
+			</dict>
+			<key>INIntentParameters</key>
+			<array>
+				<dict>
+					<key>INIntentParameterConfigurable</key>
+					<true/>
+					<key>INIntentParameterCustomDisambiguation</key>
+					<true/>
+					<key>INIntentParameterDisplayName</key>
+					<string>Blog ID</string>
+					<key>INIntentParameterDisplayNameID</key>
+					<string>B7Y5L6</string>
+					<key>INIntentParameterDisplayPriority</key>
+					<integer>1</integer>
+					<key>INIntentParameterMetadata</key>
+					<dict>
+						<key>INIntentParameterMetadataCapitalization</key>
+						<string>Sentences</string>
+						<key>INIntentParameterMetadataDefaultValueID</key>
+						<string>Efw2rF</string>
+					</dict>
+					<key>INIntentParameterName</key>
+					<string>blogID</string>
+					<key>INIntentParameterPromptDialogs</key>
+					<array>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Configuration</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Primary</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>There are ${count} options matching ‘${blogID}’.</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>1ohdmx</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>DisambiguationIntroduction</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterPromptDialogCustom</key>
+							<true/>
+							<key>INIntentParameterPromptDialogFormatString</key>
+							<string>Just to confirm, you wanted ‘${blogID}’?</string>
+							<key>INIntentParameterPromptDialogFormatStringID</key>
+							<string>AsBw3p</string>
+							<key>INIntentParameterPromptDialogType</key>
+							<string>Confirmation</string>
+						</dict>
+					</array>
+					<key>INIntentParameterSupportsDynamicEnumeration</key>
+					<true/>
+					<key>INIntentParameterSupportsResolution</key>
+					<true/>
+					<key>INIntentParameterTag</key>
+					<integer>1</integer>
+					<key>INIntentParameterType</key>
+					<string>String</string>
+					<key>INIntentParameterUnsupportedReasons</key>
+					<array>
+						<dict>
+							<key>INIntentParameterUnsupportedReasonCode</key>
+							<string>tokenRequired</string>
+							<key>INIntentParameterUnsupportedReasonCustom</key>
+							<true/>
+							<key>INIntentParameterUnsupportedReasonFormatString</key>
+							<string>You must sign in with the Ringgold app before using Shortcuts.</string>
+							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
+							<string>qiyH76</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterUnsupportedReasonCode</key>
+							<string>unableToFetchBlogID</string>
+							<key>INIntentParameterUnsupportedReasonCustom</key>
+							<true/>
+							<key>INIntentParameterUnsupportedReasonFormatString</key>
+							<string>Unable to fetch blog id. Please try again later.</string>
+							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
+							<string>4JHLNK</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>INIntentResponse</key>
+			<dict>
+				<key>INIntentResponseCodes</key>
+				<array>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>success</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeName</key>
+						<string>failure</string>
+					</dict>
+				</array>
+				<key>INIntentResponseLastParameterTag</key>
+				<integer>1</integer>
+				<key>INIntentResponseOutput</key>
+				<string>blogID</string>
+				<key>INIntentResponseParameters</key>
+				<array>
+					<dict>
+						<key>INIntentResponseParameterDisplayName</key>
+						<string>Blog ID</string>
+						<key>INIntentResponseParameterDisplayNameID</key>
+						<string>Us4fLy</string>
+						<key>INIntentResponseParameterDisplayPriority</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterName</key>
+						<string>blogID</string>
+						<key>INIntentResponseParameterTag</key>
+						<integer>1</integer>
+						<key>INIntentResponseParameterType</key>
+						<string>String</string>
+					</dict>
+				</array>
+			</dict>
+			<key>INIntentTitle</key>
+			<string>Get Blog ID from Micro.blog</string>
+			<key>INIntentTitleID</key>
+			<string>ii8hQF</string>
+			<key>INIntentType</key>
+			<string>Custom</string>
+			<key>INIntentVerb</key>
+			<string>Do</string>
 		</dict>
 	</array>
 	<key>INTypes</key>

@@ -11,6 +11,8 @@ class IntentHandler: INExtension {
     
     override func handler(for intent: INIntent) -> Any {
 		switch intent {
+		case is GetBlogIDIntent:
+			return GetBlogIDIntentHandler()
 		case is PostHTMLIntent:
 			return PostHTMLIntentHandler()
 		default:
