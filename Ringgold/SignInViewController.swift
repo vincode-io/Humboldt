@@ -12,10 +12,18 @@ class SignInViewController: UIViewController {
 
 	@IBOutlet weak var emailTextField: UITextField!
 	@IBOutlet weak var signInButton: UIButton!
+	@IBOutlet var topConstraint: NSLayoutConstraint!
+	@IBOutlet var centerYConstraint: NSLayoutConstraint!
 	
 	override func viewDidLoad() {
 		emailTextField.delegate = self
+
+		topConstraint.constant = 100
+		topConstraint.isActive = false
+
 		NotificationCenter.default.addObserver(self, selector: #selector(textDidChange(_:)), name: UITextField.textDidChangeNotification, object: emailTextField)
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+		NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
 	}
 	
 	@IBAction func signIn(_ sender: Any) {
@@ -34,6 +42,22 @@ class SignInViewController: UIViewController {
 		}
 	}
 
+	@objc func keyboardWillShow(_ note: Notification) {
+		self.centerYConstraint.isActive = false
+		self.topConstraint.isActive = true
+		UIView.animate(withDuration: 0.5) {
+			self.view.layoutIfNeeded()
+		}
+	}
+	
+	@objc func keyboardWillHide(_ note: Notification) {
+		self.centerYConstraint.isActive = true
+		self.topConstraint.isActive = false
+		UIView.animate(withDuration: 0.5) {
+			self.view.layoutIfNeeded()
+		}
+	}
+	
 	@objc func textDidChange(_ note: Notification) {
 		signInButton.isEnabled = emailTextField.text?.uuIsValidEmail() ?? false
 	}
