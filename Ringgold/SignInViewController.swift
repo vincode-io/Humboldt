@@ -14,6 +14,7 @@ class SignInViewController: UIViewController {
 	@IBOutlet weak var signInButton: UIButton!
 	
 	override func viewDidLoad() {
+		emailTextField.delegate = self
 		NotificationCenter.default.addObserver(self, selector: #selector(textDidChange(_:)), name: UITextField.textDidChangeNotification, object: emailTextField)
 	}
 	
@@ -35,6 +36,15 @@ class SignInViewController: UIViewController {
 
 	@objc func textDidChange(_ note: Notification) {
 		signInButton.isEnabled = emailTextField.text?.uuIsValidEmail() ?? false
+	}
+	
+}
+
+extension SignInViewController: UITextFieldDelegate {
+	
+	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+		textField.resignFirstResponder()
+		return false
 	}
 	
 }
