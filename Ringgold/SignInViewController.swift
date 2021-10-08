@@ -17,6 +17,7 @@ class SignInViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		emailTextField.delegate = self
+		signInButton.role = .primary
 
 		topConstraint.constant = 100
 		topConstraint.isActive = false
@@ -68,6 +69,9 @@ extension SignInViewController: UITextFieldDelegate {
 	
 	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 		textField.resignFirstResponder()
+		if traitCollection.userInterfaceIdiom == .mac {
+			signIn(self)
+		}
 		return false
 	}
 	
