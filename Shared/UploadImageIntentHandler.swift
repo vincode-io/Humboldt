@@ -65,7 +65,7 @@ public class UploadImageIntentHandler: NSObject, SnippetsIntentHandler, UploadIm
 				return
 			}
 			
-			let response = UploadImageIntentResponse()
+			let response = UploadImageIntentResponse(code: .success, userActivity: nil)
 			response.publishedURL = publishedURL
 			completion(response)
 		}

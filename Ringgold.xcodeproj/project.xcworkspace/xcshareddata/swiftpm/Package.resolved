@@ -16,7 +16,7 @@
         "state": {
           "branch": null,
           "revision": "ab1c75cacaa305335f18649b4bfb35b8330e85a0",
-          "version": "1.1.7"
+          "version": "1.1.8"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/SilverPineSoftware/UUSwiftCore.git",
         "state": {
           "branch": null,
-          "revision": "028ebae602272ac68c0ae8840b2269f14fd1a58b",
-          "version": "1.0.4"
+          "revision": "b95418b2c0467c1a8abe704c63db7fa5b1f9aa58",
+          "version": "1.1.0"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/SilverPineSoftware/UUSwiftImage.git",
         "state": {
           "branch": null,
-          "revision": "bebe821ca37dc13aa0a5900e36ab18f93bff79cb",
-          "version": "1.0.5"
+          "revision": "7f6bfb954a65b2e22514dfd5cf9b6604d440b58f",
+          "version": "1.1.0"
         }
       },
       {

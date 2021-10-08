@@ -46,7 +46,7 @@ public class PostHTMLIntentHandler: NSObject, SnippetsIntentHandler, PostHTMLInt
 				return
 			}
 			
-			let response = PostHTMLIntentResponse()
+			let response = PostHTMLIntentResponse(code: .success, userActivity: nil)
 			response.location = location
 			completion(response)
 		}
