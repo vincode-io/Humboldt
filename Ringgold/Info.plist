@@ -43,12 +43,6 @@
 	<true/>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2020-2021 Maurice C Parker. All rights reserved.</string>
-	<key>NSUserActivityTypes</key>
-	<array>
-		<string>GetBlogIDIntent</string>
-		<string>PostHTMLIntent</string>
-		<string>UploadImageIntent</string>
-	</array>
 	<key>OrganizationIdentifier</key>
 	<string>$(ORGANIZATION_IDENTIFIER)</string>
 	<key>UIApplicationSceneManifest</key>
