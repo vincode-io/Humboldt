@@ -1,11 +1,9 @@
-# Zavala
+# Ringgold
 
-A dedicated outliner for macOS, iPadOS, and iOS.
+The intial goal of this project is to provide Shortcuts support for Micro.blog. It may be expanded to include support for other Micropub implementations.
 
-## Download
-
-Zavala 1.2 has been release! You can [download it in the App Store](https://apps.apple.com/us/app/zavala/id1546457750).
+Right now we can just upload images and post HTML to Micro.blog. We're interested in hearing how else you would like to script access to Micro.blog using Shortcuts. There is a good chance we'll implement it.
 
 ## Community
 
-Let's talk outliners! Head over to [Discussions](https://github.com/vincode-io/Ringgold/discussions) for outliner discussion and to express what you would like to see in an outliner application. Be sure to read our [Code of Conduct](https://github.com/vincode-io/Ringgold/wiki/Code-of-Conduct).
+Let's talk! Head over to [Discussions](https://github.com/vincode-io/Ringgold/discussions) for discussions and to express what you would like to see in this application. Be sure to read our [Code of Conduct](https://github.com/vincode-io/Ringgold/wiki/Code-of-Conduct).
