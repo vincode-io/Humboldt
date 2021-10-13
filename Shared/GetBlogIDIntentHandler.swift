@@ -68,7 +68,7 @@ public class GetBlogIDIntentHandler: NSObject, SnippetsIntentHandler, GetBlogIDI
 	}
 	
 	public func handle(intent: GetBlogIDIntent, completion: @escaping (GetBlogIDIntentResponse) -> Void) {
-		let response = GetBlogIDIntentResponse()
+		let response = GetBlogIDIntentResponse(code: .success, userActivity: nil)
 		response.blogID = intent.blogID
 		completion(response)
 	}
