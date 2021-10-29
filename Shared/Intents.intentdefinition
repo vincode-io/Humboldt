@@ -38,7 +38,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Post ${html}with ${title}to ${blogID}</string>
+					<string>Post ${html}with ${title}</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>bmVpyU</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
@@ -56,7 +56,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Post ${html}with ${title}to ${blogID}</string>
+					<string>Post ${html}with ${title}</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>x6iohZ</string>
 				</dict>
@@ -493,7 +493,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Upload ${image}to ${blogID}</string>
+					<string>Upload ${image}</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>sSjXsU</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
@@ -513,7 +513,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Upload ${image}to ${blogID}</string>
+					<string>Upload ${image}</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>PlYOio</string>
 				</dict>
