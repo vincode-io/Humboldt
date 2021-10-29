@@ -6,11 +6,10 @@
 //
 
 import UIKit
+import Intents
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
@@ -31,6 +30,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 	}
 
+	func application(_ application: UIApplication, handlerFor intent: INIntent) -> Any? {
+		switch intent {
+		case is GetBlogIDIntent:
+			return GetBlogIDIntentHandler()
+		case is PostHTMLIntent:
+			return PostHTMLIntentHandler()
+		case is UploadImageIntent:
+			return UploadImageIntentHandler()
+		default:
+			fatalError("Unrecognized Intent")
+		}
+	}
 
 }
 

@@ -13,52 +13,17 @@
 		51499AF52707D73C00DBBD77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51499AF32707D73C00DBBD77 /* Main.storyboard */; };
 		51499AF72707D73D00DBBD77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51499AF62707D73D00DBBD77 /* Assets.xcassets */; };
 		51499AFA2707D73D00DBBD77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51499AF82707D73D00DBBD77 /* LaunchScreen.storyboard */; };
-		51499B052707DC6800DBBD77 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51499B032707DC3B00DBBD77 /* IntentHandler.swift */; };
 		515FB1C42707EA3C00B4FE65 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D56A2706390700FA0365 /* AppDefaults.swift */; };
-		515FB1C52707EA3C00B4FE65 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D56A2706390700FA0365 /* AppDefaults.swift */; };
 		515FB1C62707EA4000B4FE65 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D56D27063A3500FA0365 /* TokenManager.swift */; };
-		515FB1C72707EA4000B4FE65 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5194D56D27063A3500FA0365 /* TokenManager.swift */; };
 		515FB1C92707EAB200B4FE65 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FB1C82707EAB200B4FE65 /* UIViewController+.swift */; };
 		515FB1CB2707EC5000B4FE65 /* Snippets in Frameworks */ = {isa = PBXBuildFile; productRef = 515FB1CA2707EC5000B4FE65 /* Snippets */; };
-		515FB1CD2707EC5800B4FE65 /* Snippets in Frameworks */ = {isa = PBXBuildFile; productRef = 515FB1CC2707EC5800B4FE65 /* Snippets */; };
 		515FB1CF2707EF8600B4FE65 /* AuthenticatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515FB1CE2707EF8600B4FE65 /* AuthenticatedViewController.swift */; };
 		517F9E5E270E59A6004AD979 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E5D270E59A6004AD979 /* Intents.intentdefinition */; };
-		517F9E5F270E59A6004AD979 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E5D270E59A6004AD979 /* Intents.intentdefinition */; };
 		517F9E61270E6E0E004AD979 /* PostHTMLIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E60270E6E0E004AD979 /* PostHTMLIntentHandler.swift */; };
-		517F9E62270E6E0E004AD979 /* PostHTMLIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E60270E6E0E004AD979 /* PostHTMLIntentHandler.swift */; };
-		517F9E63270E7CD8004AD979 /* IntentsExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 51872A962707B5200078CF1A /* IntentsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		517F9E68270F0C2F004AD979 /* GetBlogIDIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E67270F0C2F004AD979 /* GetBlogIDIntentHandler.swift */; };
-		517F9E69270F0C2F004AD979 /* GetBlogIDIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E67270F0C2F004AD979 /* GetBlogIDIntentHandler.swift */; };
 		517F9E6B270F0CC0004AD979 /* SnippetsIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E6A270F0CC0004AD979 /* SnippetsIntentHandler.swift */; };
-		517F9E6C270F0CC0004AD979 /* SnippetsIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517F9E6A270F0CC0004AD979 /* SnippetsIntentHandler.swift */; };
-		51872A972707B5200078CF1A /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51872A842707B2410078CF1A /* Intents.framework */; platformFilter = maccatalyst; };
 		51EB1631270F50930079F40C /* UploadImageIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EB1630270F50930079F40C /* UploadImageIntentHandler.swift */; };
-		51EB1632270F50930079F40C /* UploadImageIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51EB1630270F50930079F40C /* UploadImageIntentHandler.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		517F9E64270E7CD8004AD979 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5194D54427060F6300FA0365 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 51872A952707B5200078CF1A;
-			remoteInfo = IntentsExtension;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		517F9E66270E7CD8004AD979 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				517F9E63270E7CD8004AD979 /* IntentsExtension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		51499AEB2707D73C00DBBD77 /* Ringgold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ringgold.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,9 +35,6 @@
 		51499AF92707D73D00DBBD77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51499AFB2707D73D00DBBD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51499B002707D7EC00DBBD77 /* Ringgold.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ringgold.entitlements; sourceTree = "<group>"; };
-		51499B022707DC3B00DBBD77 /* Ringgold_IntentsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ringgold_IntentsExtension.entitlements; sourceTree = "<group>"; };
-		51499B032707DC3B00DBBD77 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
-		51499B042707DC3B00DBBD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		515FB1C82707EAB200B4FE65 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		515FB1CE2707EF8600B4FE65 /* AuthenticatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedViewController.swift; sourceTree = "<group>"; };
 		517F9E5D270E59A6004AD979 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
@@ -80,8 +42,6 @@
 		517F9E67270F0C2F004AD979 /* GetBlogIDIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBlogIDIntentHandler.swift; sourceTree = "<group>"; };
 		517F9E6A270F0CC0004AD979 /* SnippetsIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetsIntentHandler.swift; sourceTree = "<group>"; };
 		51872A842707B2410078CF1A /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
-		51872A912707B2B10078CF1A /* Ringgold_iOS_intents_target.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Ringgold_iOS_intents_target.xcconfig; sourceTree = "<group>"; };
-		51872A962707B5200078CF1A /* IntentsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5194D56A2706390700FA0365 /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 		5194D56D27063A3500FA0365 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		5194D57227063CA100FA0365 /* Ringgold_ios_target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Ringgold_ios_target.xcconfig; sourceTree = "<group>"; };
@@ -101,15 +61,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51872A932707B5200078CF1A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				515FB1CD2707EC5800B4FE65 /* Snippets in Frameworks */,
-				51872A972707B5200078CF1A /* Intents.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -126,33 +77,22 @@
 				51499AF62707D73D00DBBD77 /* Assets.xcassets */,
 				51499AF82707D73D00DBBD77 /* LaunchScreen.storyboard */,
 				51499AF32707D73C00DBBD77 /* Main.storyboard */,
+				5194D54827060F6300FA0365 /* Intents */,
 			);
 			path = Ringgold;
-			sourceTree = "<group>";
-		};
-		51499B012707DC3B00DBBD77 /* IntentsExtension */ = {
-			isa = PBXGroup;
-			children = (
-				51499B022707DC3B00DBBD77 /* Ringgold_IntentsExtension.entitlements */,
-				51499B032707DC3B00DBBD77 /* IntentHandler.swift */,
-				51499B042707DC3B00DBBD77 /* Info.plist */,
-			);
-			path = IntentsExtension;
 			sourceTree = "<group>";
 		};
 		5194D54327060F6300FA0365 = {
 			isa = PBXGroup;
 			children = (
 				51499AFF2707D7BE00DBBD77 /* Ringgold */,
-				5194D54827060F6300FA0365 /* Shared */,
-				51499B012707DC3B00DBBD77 /* IntentsExtension */,
 				5194D57027063C4400FA0365 /* xcconfig */,
 				5194D55127060F6500FA0365 /* Products */,
 				5194D58827064D6B00FA0365 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		5194D54827060F6300FA0365 /* Shared */ = {
+		5194D54827060F6300FA0365 /* Intents */ = {
 			isa = PBXGroup;
 			children = (
 				517F9E5D270E59A6004AD979 /* Intents.intentdefinition */,
@@ -163,13 +103,12 @@
 				5194D56D27063A3500FA0365 /* TokenManager.swift */,
 				51EB1630270F50930079F40C /* UploadImageIntentHandler.swift */,
 			);
-			path = Shared;
+			path = Intents;
 			sourceTree = "<group>";
 		};
 		5194D55127060F6500FA0365 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				51872A962707B5200078CF1A /* IntentsExtension.appex */,
 				51499AEB2707D73C00DBBD77 /* Ringgold.app */,
 			);
 			name = Products;
@@ -183,7 +122,6 @@
 				5194D58127063E8300FA0365 /* Ringgold_project_release.xcconfig */,
 				5194D57727063D0500FA0365 /* Ringgold_iOS_target_common.xcconfig */,
 				5194D57227063CA100FA0365 /* Ringgold_ios_target.xcconfig */,
-				51872A912707B2B10078CF1A /* Ringgold_iOS_intents_target.xcconfig */,
 			);
 			path = xcconfig;
 			sourceTree = "<group>";
@@ -206,12 +144,10 @@
 				51499AE72707D73C00DBBD77 /* Sources */,
 				51499AE82707D73C00DBBD77 /* Frameworks */,
 				51499AE92707D73C00DBBD77 /* Resources */,
-				517F9E66270E7CD8004AD979 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				517F9E65270E7CD8004AD979 /* PBXTargetDependency */,
 			);
 			name = Ringgold;
 			packageProductDependencies = (
@@ -220,26 +156,6 @@
 			productName = Ringgold;
 			productReference = 51499AEB2707D73C00DBBD77 /* Ringgold.app */;
 			productType = "com.apple.product-type.application";
-		};
-		51872A952707B5200078CF1A /* IntentsExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 51872A9F2707B5200078CF1A /* Build configuration list for PBXNativeTarget "IntentsExtension" */;
-			buildPhases = (
-				51872A922707B5200078CF1A /* Sources */,
-				51872A932707B5200078CF1A /* Frameworks */,
-				51872A942707B5200078CF1A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = IntentsExtension;
-			packageProductDependencies = (
-				515FB1CC2707EC5800B4FE65 /* Snippets */,
-			);
-			productName = IntentsExtension;
-			productReference = 51872A962707B5200078CF1A /* IntentsExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -253,10 +169,6 @@
 				TargetAttributes = {
 					51499AEA2707D73C00DBBD77 = {
 						CreatedOnToolsVersion = 13.0;
-					};
-					51872A952707B5200078CF1A = {
-						CreatedOnToolsVersion = 13.0;
-						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -277,7 +189,6 @@
 			projectRoot = "";
 			targets = (
 				51499AEA2707D73C00DBBD77 /* Ringgold */,
-				51872A952707B5200078CF1A /* IntentsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -290,13 +201,6 @@
 				51499AFA2707D73D00DBBD77 /* LaunchScreen.storyboard in Resources */,
 				51499AF72707D73D00DBBD77 /* Assets.xcassets in Resources */,
 				51499AF52707D73C00DBBD77 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		51872A942707B5200078CF1A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,30 +226,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51872A922707B5200078CF1A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				517F9E69270F0C2F004AD979 /* GetBlogIDIntentHandler.swift in Sources */,
-				51EB1632270F50930079F40C /* UploadImageIntentHandler.swift in Sources */,
-				51499B052707DC6800DBBD77 /* IntentHandler.swift in Sources */,
-				515FB1C72707EA4000B4FE65 /* TokenManager.swift in Sources */,
-				517F9E5F270E59A6004AD979 /* Intents.intentdefinition in Sources */,
-				515FB1C52707EA3C00B4FE65 /* AppDefaults.swift in Sources */,
-				517F9E62270E6E0E004AD979 /* PostHTMLIntentHandler.swift in Sources */,
-				517F9E6C270F0CC0004AD979 /* SnippetsIntentHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		517F9E65270E7CD8004AD979 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 51872A952707B5200078CF1A /* IntentsExtension */;
-			targetProxy = 517F9E64270E7CD8004AD979 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		51499AF32707D73C00DBBD77 /* Main.storyboard */ = {
@@ -381,22 +262,6 @@
 			};
 			name = Release;
 		};
-		51872AA02707B5200078CF1A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51872A912707B2B10078CF1A /* Ringgold_iOS_intents_target.xcconfig */;
-			buildSettings = {
-				SUPPORTS_MACCATALYST = YES;
-			};
-			name = Debug;
-		};
-		51872AA12707B5200078CF1A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51872A912707B2B10078CF1A /* Ringgold_iOS_intents_target.xcconfig */;
-			buildSettings = {
-				SUPPORTS_MACCATALYST = YES;
-			};
-			name = Release;
-		};
 		5194D55F27060F6500FA0365 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5194D58027063E8300FA0365 /* Ringgold_project_debug.xcconfig */;
@@ -419,15 +284,6 @@
 			buildConfigurations = (
 				51499AFC2707D73D00DBBD77 /* Debug */,
 				51499AFD2707D73D00DBBD77 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		51872A9F2707B5200078CF1A /* Build configuration list for PBXNativeTarget "IntentsExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				51872AA02707B5200078CF1A /* Debug */,
-				51872AA12707B5200078CF1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -456,11 +312,6 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		515FB1CA2707EC5000B4FE65 /* Snippets */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5194D56727060FEC00FA0365 /* XCRemoteSwiftPackageReference "snippets" */;
-			productName = Snippets;
-		};
-		515FB1CC2707EC5800B4FE65 /* Snippets */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5194D56727060FEC00FA0365 /* XCRemoteSwiftPackageReference "snippets" */;
 			productName = Snippets;
