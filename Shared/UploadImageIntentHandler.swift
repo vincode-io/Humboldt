@@ -11,9 +11,9 @@ import UIKit
 
 public class UploadImageIntentHandler: NSObject, SnippetsIntentHandler, UploadImageIntentHandling {
 
-	public func resolveBlogID(for intent: UploadImageIntent, with completion: @escaping (UploadImageBlogIDResolutionResult) -> Void) {
+	public func resolveBlogID(for intent: UploadImageIntent, with completion: @escaping (INStringResolutionResult) -> Void) {
 		guard let blogID = intent.blogID else {
-			completion(.unsupported(forReason: .required))
+			completion(.notRequired())
 			return
 		}
 		completion(.success(with: blogID))

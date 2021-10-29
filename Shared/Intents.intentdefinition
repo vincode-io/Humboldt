@@ -9,11 +9,11 @@
 	<key>INIntentDefinitionNamespace</key>
 	<string>SpZIEo</string>
 	<key>INIntentDefinitionSystemVersion</key>
-	<string>21A5543b</string>
+	<string>21C5021h</string>
 	<key>INIntentDefinitionToolsBuildVersion</key>
-	<string>13A233</string>
+	<string>13A1030d</string>
 	<key>INIntentDefinitionToolsVersion</key>
-	<string>13.0</string>
+	<string>13.1</string>
 	<key>INIntents</key>
 	<array>
 		<dict>
@@ -21,6 +21,8 @@
 			<string>share</string>
 			<key>INIntentConfigurable</key>
 			<true/>
+			<key>INIntentDescription</key>
+			<string>Uploads the given HTML and Title (Optional) to Micro.blog. You can specify the Blog ID if you want to post to something other than your default blog.</string>
 			<key>INIntentDescriptionID</key>
 			<string>uGT97G</string>
 			<key>INIntentInput</key>
@@ -122,19 +124,6 @@
 					<integer>1</integer>
 					<key>INIntentParameterType</key>
 					<string>String</string>
-					<key>INIntentParameterUnsupportedReasons</key>
-					<array>
-						<dict>
-							<key>INIntentParameterUnsupportedReasonCode</key>
-							<string>required</string>
-							<key>INIntentParameterUnsupportedReasonCustom</key>
-							<true/>
-							<key>INIntentParameterUnsupportedReasonFormatString</key>
-							<string>The${blogID}parameter is required.</string>
-							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
-							<string>ofvqKf</string>
-						</dict>
-					</array>
 				</dict>
 				<dict>
 					<key>INIntentParameterConfigurable</key>
@@ -312,6 +301,8 @@
 			<string>generic</string>
 			<key>INIntentConfigurable</key>
 			<true/>
+			<key>INIntentDescription</key>
+			<string>Allows you to select from your Micro.blog blogs and pass that ID to another action.</string>
 			<key>INIntentDescriptionID</key>
 			<string>fxA1i0</string>
 			<key>INIntentLastParameterTag</key>
@@ -487,6 +478,8 @@
 			<string>share</string>
 			<key>INIntentConfigurable</key>
 			<true/>
+			<key>INIntentDescription</key>
+			<string>Uploads the given image to Micro.blog. You can specify the Blog ID if you want to upload to something other than your default blog.</string>
 			<key>INIntentDescriptionID</key>
 			<string>dWgwm3</string>
 			<key>INIntentInput</key>
@@ -570,19 +563,6 @@
 					<integer>5</integer>
 					<key>INIntentParameterType</key>
 					<string>String</string>
-					<key>INIntentParameterUnsupportedReasons</key>
-					<array>
-						<dict>
-							<key>INIntentParameterUnsupportedReasonCode</key>
-							<string>required</string>
-							<key>INIntentParameterUnsupportedReasonCustom</key>
-							<true/>
-							<key>INIntentParameterUnsupportedReasonFormatString</key>
-							<string>The${blogID}parameter is required.</string>
-							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
-							<string>2ootHh</string>
-						</dict>
-					</array>
 				</dict>
 				<dict>
 					<key>INIntentParameterConfigurable</key>

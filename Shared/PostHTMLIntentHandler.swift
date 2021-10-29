@@ -11,15 +11,14 @@ import UIKit
 
 public class PostHTMLIntentHandler: NSObject, SnippetsIntentHandler, PostHTMLIntentHandling {
 
-	public func resolveBlogID(for intent: PostHTMLIntent, with completion: @escaping (PostHTMLBlogIDResolutionResult) -> Void) {
+	public func resolveBlogID(for intent: PostHTMLIntent, with completion: @escaping (INStringResolutionResult) -> Void) {
 		guard let blogID = intent.blogID else {
-			completion(.unsupported(forReason: .required))
+			completion(.notRequired())
 			return
 		}
 		completion(.success(with: blogID))
 	}
 	
-
 	public func resolveTitle(for intent: PostHTMLIntent, with completion: @escaping (PostHTMLTitleResolutionResult) -> Void) {
 		completion(.success(with: intent.title ?? ""))
 	}
