@@ -264,6 +264,20 @@
 						<key>INIntentResponseCodeName</key>
 						<string>failure</string>
 					</dict>
+					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>You must sign in with the Ringgold app before using Shortcuts.</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>7ORbMY</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>You must sign in with the Ringgold app before using Shortcuts.</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>SzYtbe</string>
+						<key>INIntentResponseCodeName</key>
+						<string>tokenRequired</string>
+						<key>INIntentResponseCodeSuccess</key>
+						<true/>
+					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
 				<integer>1</integer>
@@ -643,6 +657,18 @@
 					<dict>
 						<key>INIntentResponseCodeName</key>
 						<string>failure</string>
+					</dict>
+					<dict>
+						<key>INIntentResponseCodeConciseFormatString</key>
+						<string>You must sign in with the Ringgold app before using Shortcuts.</string>
+						<key>INIntentResponseCodeConciseFormatStringID</key>
+						<string>fKL22I</string>
+						<key>INIntentResponseCodeFormatString</key>
+						<string>You must sign in with the Ringgold app before using Shortcuts.</string>
+						<key>INIntentResponseCodeFormatStringID</key>
+						<string>c4aVqi</string>
+						<key>INIntentResponseCodeName</key>
+						<string>tokenRequired</string>
 					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>

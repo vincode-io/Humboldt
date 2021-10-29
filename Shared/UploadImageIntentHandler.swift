@@ -42,7 +42,7 @@ public class UploadImageIntentHandler: NSObject, SnippetsIntentHandler, UploadIm
 		do {
 			try configureSnippets(blogID: intent.blogID)
 		} catch {
-			completion(.init(code: .failure, userActivity: nil))
+			completion(.init(code: .tokenRequired, userActivity: nil))
 			return
 		}
 		

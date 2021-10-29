@@ -35,7 +35,7 @@ public class PostHTMLIntentHandler: NSObject, SnippetsIntentHandler, PostHTMLInt
 		do {
 			try configureSnippets(blogID: intent.blogID)
 		} catch {
-			completion(.init(code: .failure, userActivity: nil))
+			completion(.init(code: .tokenRequired, userActivity: nil))
 			return
 		}
 
