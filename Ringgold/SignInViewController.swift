@@ -30,17 +30,28 @@ class SignInViewController: UIViewController {
 	@IBAction func signIn(_ sender: Any) {
 		guard let email = emailTextField.text else { return }
 		
-		Snippets.Microblog.requestUserLoginEmail(email: email, appName: "Ringgold", redirect: "ringgold://signin?token=") { requestError in
-			DispatchQueue.main.async {
-				if let requestError = requestError {
-					self.presentError(requestError)
-				} else {
-					AppDefaults.shared.username = email
-					self.showConfirmation()
-					self.emailTextField.resignFirstResponder()
+		if email.uuIsValidEmail() {
+			Snippets.Microblog.requestUserLoginEmail(email: email, appName: "Ringgold", redirect: "ringgold://signin?token=") { requestError in
+				DispatchQueue.main.async {
+					if let requestError = requestError {
+						self.presentError(requestError)
+					} else {
+						AppDefaults.shared.username = email
+						self.showConfirmation()
+						self.emailTextField.resignFirstResponder()
+					}
+				}
+			}
+		} else {
+			Snippets.Microblog.requestPermanentTokenFromTemporaryToken(token: email) { (requestError, permanentToken) in
+				guard requestError == nil, let permanentToken = permanentToken else { return }
+				DispatchQueue.main.async {
+					AppDefaults.shared.username = "test_user"
+					try? TokenManager.storeToken(permanentToken)
 				}
 			}
 		}
+		
 	}
 
 	@objc func keyboardWillShow(_ note: Notification) {
@@ -60,7 +71,7 @@ class SignInViewController: UIViewController {
 	}
 	
 	@objc func textDidChange(_ note: Notification) {
-		signInButton.isEnabled = emailTextField.text?.uuIsValidEmail() ?? false
+		signInButton.isEnabled = !(emailTextField.text?.isEmpty ?? true)
 	}
 	
 }
