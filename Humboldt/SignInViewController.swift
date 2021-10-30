@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Ringgold
+//  Humboldt
 //
 //  Created by Maurice Parker on 10/1/21.
 //
@@ -31,7 +31,7 @@ class SignInViewController: UIViewController {
 		guard let email = emailTextField.text else { return }
 		
 		if email.uuIsValidEmail() {
-			Snippets.Microblog.requestUserLoginEmail(email: email, appName: "Ringgold", redirect: "ringgold://signin?token=") { requestError in
+			Snippets.Microblog.requestUserLoginEmail(email: email, appName: "Humboldt", redirect: "humboldt://signin?token=") { requestError in
 				DispatchQueue.main.async {
 					if let requestError = requestError {
 						self.presentError(requestError)

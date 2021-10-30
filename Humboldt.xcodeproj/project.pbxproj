@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		51499AEB2707D73C00DBBD77 /* Ringgold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ringgold.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51499AEB2707D73C00DBBD77 /* Humboldt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Humboldt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51499AED2707D73C00DBBD77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51499AEF2707D73C00DBBD77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		51499AF12707D73C00DBBD77 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +34,7 @@
 		51499AF62707D73D00DBBD77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51499AF92707D73D00DBBD77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51499AFB2707D73D00DBBD77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51499B002707D7EC00DBBD77 /* Ringgold.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ringgold.entitlements; sourceTree = "<group>"; };
+		51499B002707D7EC00DBBD77 /* Humboldt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Humboldt.entitlements; sourceTree = "<group>"; };
 		515FB1C82707EAB200B4FE65 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		515FB1CE2707EF8600B4FE65 /* AuthenticatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedViewController.swift; sourceTree = "<group>"; };
 		517F9E5D270E59A6004AD979 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
@@ -44,11 +44,11 @@
 		51872A842707B2410078CF1A /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		5194D56A2706390700FA0365 /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 		5194D56D27063A3500FA0365 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
-		5194D57227063CA100FA0365 /* Ringgold_ios_target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Ringgold_ios_target.xcconfig; sourceTree = "<group>"; };
-		5194D57727063D0500FA0365 /* Ringgold_iOS_target_common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Ringgold_iOS_target_common.xcconfig; sourceTree = "<group>"; };
-		5194D57D27063E4500FA0365 /* Ringgold_project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Ringgold_project.xcconfig; sourceTree = "<group>"; };
-		5194D58027063E8300FA0365 /* Ringgold_project_debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Ringgold_project_debug.xcconfig; sourceTree = "<group>"; };
-		5194D58127063E8300FA0365 /* Ringgold_project_release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Ringgold_project_release.xcconfig; sourceTree = "<group>"; };
+		5194D57227063CA100FA0365 /* Humboldt_ios_target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Humboldt_ios_target.xcconfig; sourceTree = "<group>"; };
+		5194D57727063D0500FA0365 /* Humboldt_iOS_target_common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Humboldt_iOS_target_common.xcconfig; sourceTree = "<group>"; };
+		5194D57D27063E4500FA0365 /* Humboldt_project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Humboldt_project.xcconfig; sourceTree = "<group>"; };
+		5194D58027063E8300FA0365 /* Humboldt_project_debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Humboldt_project_debug.xcconfig; sourceTree = "<group>"; };
+		5194D58127063E8300FA0365 /* Humboldt_project_release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Humboldt_project_release.xcconfig; sourceTree = "<group>"; };
 		51EB1630270F50930079F40C /* UploadImageIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageIntentHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,10 +64,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		51499AFF2707D7BE00DBBD77 /* Ringgold */ = {
+		51499AFF2707D7BE00DBBD77 /* Humboldt */ = {
 			isa = PBXGroup;
 			children = (
-				51499B002707D7EC00DBBD77 /* Ringgold.entitlements */,
+				51499B002707D7EC00DBBD77 /* Humboldt.entitlements */,
 				51499AFB2707D73D00DBBD77 /* Info.plist */,
 				51499AED2707D73C00DBBD77 /* AppDelegate.swift */,
 				515FB1CE2707EF8600B4FE65 /* AuthenticatedViewController.swift */,
@@ -79,13 +79,13 @@
 				51499AF32707D73C00DBBD77 /* Main.storyboard */,
 				5194D54827060F6300FA0365 /* Intents */,
 			);
-			path = Ringgold;
+			path = Humboldt;
 			sourceTree = "<group>";
 		};
 		5194D54327060F6300FA0365 = {
 			isa = PBXGroup;
 			children = (
-				51499AFF2707D7BE00DBBD77 /* Ringgold */,
+				51499AFF2707D7BE00DBBD77 /* Humboldt */,
 				5194D57027063C4400FA0365 /* xcconfig */,
 				5194D55127060F6500FA0365 /* Products */,
 				5194D58827064D6B00FA0365 /* Frameworks */,
@@ -109,7 +109,7 @@
 		5194D55127060F6500FA0365 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				51499AEB2707D73C00DBBD77 /* Ringgold.app */,
+				51499AEB2707D73C00DBBD77 /* Humboldt.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,11 +117,11 @@
 		5194D57027063C4400FA0365 /* xcconfig */ = {
 			isa = PBXGroup;
 			children = (
-				5194D57D27063E4500FA0365 /* Ringgold_project.xcconfig */,
-				5194D58027063E8300FA0365 /* Ringgold_project_debug.xcconfig */,
-				5194D58127063E8300FA0365 /* Ringgold_project_release.xcconfig */,
-				5194D57727063D0500FA0365 /* Ringgold_iOS_target_common.xcconfig */,
-				5194D57227063CA100FA0365 /* Ringgold_ios_target.xcconfig */,
+				5194D57D27063E4500FA0365 /* Humboldt_project.xcconfig */,
+				5194D58027063E8300FA0365 /* Humboldt_project_debug.xcconfig */,
+				5194D58127063E8300FA0365 /* Humboldt_project_release.xcconfig */,
+				5194D57727063D0500FA0365 /* Humboldt_iOS_target_common.xcconfig */,
+				5194D57227063CA100FA0365 /* Humboldt_ios_target.xcconfig */,
 			);
 			path = xcconfig;
 			sourceTree = "<group>";
@@ -137,24 +137,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		51499AEA2707D73C00DBBD77 /* Ringgold */ = {
+		51499AEA2707D73C00DBBD77 /* Humboldt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 51499AFE2707D73D00DBBD77 /* Build configuration list for PBXNativeTarget "Ringgold" */;
+			buildConfigurationList = 51499AFE2707D73D00DBBD77 /* Build configuration list for PBXNativeTarget "Humboldt" */;
 			buildPhases = (
 				51499AE72707D73C00DBBD77 /* Sources */,
 				51499AE82707D73C00DBBD77 /* Frameworks */,
 				51499AE92707D73C00DBBD77 /* Resources */,
+				51F8A851272CC95200D349F1 /* Run VerifyNoBuildSettings */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Ringgold;
+			name = Humboldt;
 			packageProductDependencies = (
 				515FB1CA2707EC5000B4FE65 /* Snippets */,
 			);
-			productName = Ringgold;
-			productReference = 51499AEB2707D73C00DBBD77 /* Ringgold.app */;
+			productName = Humboldt;
+			productReference = 51499AEB2707D73C00DBBD77 /* Humboldt.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -172,7 +173,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5194D54727060F6300FA0365 /* Build configuration list for PBXProject "Ringgold" */;
+			buildConfigurationList = 5194D54727060F6300FA0365 /* Build configuration list for PBXProject "Humboldt" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -188,7 +189,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				51499AEA2707D73C00DBBD77 /* Ringgold */,
+				51499AEA2707D73C00DBBD77 /* Humboldt */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +206,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51F8A851272CC95200D349F1 /* Run VerifyNoBuildSettings */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run VerifyNoBuildSettings";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcrun -sdk macosx swiftc -target x86_64-macosx10.11  tools/VerifyNoBuildSettings.swift -o $CONFIGURATION_TEMP_DIR/VerifyNoBS\n$CONFIGURATION_TEMP_DIR/VerifyNoBS ${PROJECT_NAME}.xcodeproj/project.pbxproj\n\n\nif [ $? -ne 0 ]\nthen\n   echo \"error: Build Setting were found in the project.pbxproj file.  Most likely you didn't intend to change this file and should revert it.\"\n   exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51499AE72707D73C00DBBD77 /* Sources */ = {
@@ -250,28 +272,28 @@
 /* Begin XCBuildConfiguration section */
 		51499AFC2707D73D00DBBD77 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5194D57227063CA100FA0365 /* Ringgold_ios_target.xcconfig */;
+			baseConfigurationReference = 5194D57227063CA100FA0365 /* Humboldt_ios_target.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		51499AFD2707D73D00DBBD77 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5194D57227063CA100FA0365 /* Ringgold_ios_target.xcconfig */;
+			baseConfigurationReference = 5194D57227063CA100FA0365 /* Humboldt_ios_target.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
 		};
 		5194D55F27060F6500FA0365 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5194D58027063E8300FA0365 /* Ringgold_project_debug.xcconfig */;
+			baseConfigurationReference = 5194D58027063E8300FA0365 /* Humboldt_project_debug.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		5194D56027060F6500FA0365 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5194D58127063E8300FA0365 /* Ringgold_project_release.xcconfig */;
+			baseConfigurationReference = 5194D58127063E8300FA0365 /* Humboldt_project_release.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;
@@ -279,7 +301,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		51499AFE2707D73D00DBBD77 /* Build configuration list for PBXNativeTarget "Ringgold" */ = {
+		51499AFE2707D73D00DBBD77 /* Build configuration list for PBXNativeTarget "Humboldt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				51499AFC2707D73D00DBBD77 /* Debug */,
@@ -288,7 +310,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5194D54727060F6300FA0365 /* Build configuration list for PBXProject "Ringgold" */ = {
+		5194D54727060F6300FA0365 /* Build configuration list for PBXProject "Humboldt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5194D55F27060F6500FA0365 /* Debug */,

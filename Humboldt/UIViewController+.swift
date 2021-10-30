@@ -1,6 +1,6 @@
 //
 //  UIViewController+.swift
-//  Ringgold
+//  Humboldt
 //
 //  Created by Maurice Parker on 10/1/21.
 //

@@ -1,4 +1,4 @@
-#include "./Ringgold_project.xcconfig"
+#include "./Humboldt_project.xcconfig"
 
 DEBUG_INFORMATION_FORMAT = dwarf
 ENABLE_TESTABILITY = YES

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AppGroup</key>
-	<string>group.$(ORGANIZATION_IDENTIFIER).Ringgold</string>
+	<string>group.$(ORGANIZATION_IDENTIFIER).Humboldt</string>
 	<key>AppIdentifierPrefix</key>
 	<string>$(AppIdentifierPrefix)</string>
 	<key>CFBundleDevelopmentRegion</key>
@@ -26,10 +26,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>io.vincode.Ringgold</string>
+			<string>$(ORGANIZATION_IDENTIFIER).Humboldt</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>ringgold</string>
+				<string>humboldt</string>
 			</array>
 		</dict>
 	</array>

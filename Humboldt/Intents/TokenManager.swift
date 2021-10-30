@@ -1,6 +1,6 @@
 //
 //  TokenManager.swift
-//  Ringgold
+//  Humboldt
 //
 //  Created by Maurice Parker on 9/30/21.
 //

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1300"
+   LastUpgradeVersion = "1310"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "51499AEA2707D73C00DBBD77"
-               BuildableName = "Ringgold.app"
-               BlueprintName = "Ringgold"
-               ReferencedContainer = "container:Ringgold.xcodeproj">
+               BuildableName = "Humboldt.app"
+               BlueprintName = "Humboldt"
+               ReferencedContainer = "container:Humboldt.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51499AEA2707D73C00DBBD77"
-            BuildableName = "Ringgold.app"
-            BlueprintName = "Ringgold"
-            ReferencedContainer = "container:Ringgold.xcodeproj">
+            BuildableName = "Humboldt.app"
+            BlueprintName = "Humboldt"
+            ReferencedContainer = "container:Humboldt.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "51499AEA2707D73C00DBBD77"
-            BuildableName = "Ringgold.app"
-            BlueprintName = "Ringgold"
-            ReferencedContainer = "container:Ringgold.xcodeproj">
+            BuildableName = "Humboldt.app"
+            BlueprintName = "Humboldt"
+            ReferencedContainer = "container:Humboldt.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

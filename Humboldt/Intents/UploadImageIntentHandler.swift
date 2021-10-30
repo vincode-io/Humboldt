@@ -1,6 +1,6 @@
 //
 //  UploadImageIntentHandler.swift
-//  Ringgold
+//  Humboldt
 //
 //  Created by Maurice Parker on 10/7/21.
 //

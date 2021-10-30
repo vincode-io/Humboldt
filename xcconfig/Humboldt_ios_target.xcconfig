@@ -16,23 +16,23 @@
 //    PROVISIONING_PROFILE_SPECIFIER =
 //
 // And you should be able to build without code signing errors and without modifying
-// the Ringgold Xcode project.
+// the Humboldt Xcode project.
 //
-// Example:  if your Ringgold Xcode project file is at
-//     /Users/Shared/git/Ringgold/Ringgold.xcodeproj
+// Example:  if your Humboldt Xcode project file is at
+//     /Users/Shared/git/Humboldt/Humboldt.xcodeproj
 // create your DeveloperSettings.xcconfig file at
 //     /Users/Shared/git/SharedXcodeSettings/DeveloperSettings.xcconfig
 //
 
 #include? "../../SharedXcodeSettings/ProjectSettings.xcconfig"
 #include? "../../SharedXcodeSettings/DeveloperSettings.xcconfig"
-#include "./Ringgold_iOS_target_common.xcconfig"
+#include "./Humboldt_iOS_target_common.xcconfig"
 
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
-INFOPLIST_FILE = Ringgold/Info.plist
-CODE_SIGN_ENTITLEMENTS = Ringgold/Ringgold.entitlements
-PRODUCT_BUNDLE_IDENTIFIER = $(ORGANIZATION_IDENTIFIER).Ringgold
-PRODUCT_NAME = Ringgold
+INFOPLIST_FILE = Humboldt/Info.plist
+CODE_SIGN_ENTITLEMENTS = Humboldt/Humboldt.entitlements
+PRODUCT_BUNDLE_IDENTIFIER = $(ORGANIZATION_IDENTIFIER).Humboldt
+PRODUCT_NAME = Humboldt
 
 SWIFT_SWIFT3_OBJC_INFERENCE = Off
 SWIFT_VERSION = 5.3

@@ -1,6 +1,6 @@
 //
 //  AppDefaults.swift
-//  Ringgold
+//  Humboldt
 //
 //  Created by Maurice Parker on 9/30/21.
 //
@@ -14,7 +14,7 @@ final class AppDefaults {
 	
 	static var store: UserDefaults = {
 		let organizationIdentifier = Bundle.main.object(forInfoDictionaryKey: "OrganizationIdentifier") as! String
-		let suiteName = "group.\(organizationIdentifier).Ringgold"
+		let suiteName = "group.\(organizationIdentifier).Humboldt"
 		return UserDefaults.init(suiteName: suiteName)!
 	}()
 	

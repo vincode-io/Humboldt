@@ -1,6 +1,6 @@
 //
 //  SnippetsIntentHandler.swift
-//  Ringgold
+//  Humboldt
 //
 //  Created by Maurice Parker on 10/7/21.
 //
@@ -16,7 +16,7 @@ enum SnippetsIntentHandlerError: LocalizedError {
 		switch self {
 			
 		case .tokenRequired:
-			return NSLocalizedString("You must be signed into the main Ringgold app to use Shortcuts.", comment: "Token required")
+			return NSLocalizedString("You must be signed into the main Humboldt app to use Shortcuts.", comment: "Token required")
 		case .unableToFetchUserConfiguation:
 			return NSLocalizedString("Unable to fetch blog id. Please try again later.", comment: "Unable to fetch blog id")
 		}

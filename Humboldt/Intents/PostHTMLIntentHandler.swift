@@ -1,6 +1,6 @@
 //
 //  PostHTMLIntentHandler.swift
-//  Ringgold
+//  Humboldt
 //
 //  Created by Maurice Parker on 10/6/21.
 //

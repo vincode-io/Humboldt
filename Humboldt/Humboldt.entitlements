@@ -6,13 +6,13 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.$(ORGANIZATION_IDENTIFIER).Ringgold</string>
+		<string>group.$(ORGANIZATION_IDENTIFIER).Humboldt</string>
 	</array>
 	<key>com.apple.security.network.client</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)$(ORGANIZATION_IDENTIFIER).Ringgold</string>
+		<string>$(AppIdentifierPrefix)$(ORGANIZATION_IDENTIFIER).Humboldt</string>
 	</array>
 </dict>
 </plist>

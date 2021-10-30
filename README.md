@@ -1,4 +1,4 @@
-# Ringgold
+# Humboldt
 
 The intial goal of this project is to provide Shortcuts support for Micro.blog. It may be expanded to include support for other Micropub implementations.
 
