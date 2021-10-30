@@ -25,6 +25,8 @@
 			<string>Uploads the given HTML and Title (Optional) to Micro.blog. You can specify the Blog ID if you want to post to something other than your default blog.</string>
 			<key>INIntentDescriptionID</key>
 			<string>uGT97G</string>
+			<key>INIntentIneligibleForSuggestions</key>
+			<true/>
 			<key>INIntentInput</key>
 			<string>html</string>
 			<key>INIntentKeyParameter</key>
@@ -47,38 +49,6 @@
 			</dict>
 			<key>INIntentName</key>
 			<string>PostHTML</string>
-			<key>INIntentParameterCombinations</key>
-			<dict>
-				<key>blogID,title,html</key>
-				<dict>
-					<key>INIntentParameterCombinationIsLinked</key>
-					<true/>
-					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<true/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Post ${html}with ${title}</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>x6iohZ</string>
-				</dict>
-				<key>html</key>
-				<dict>
-					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<true/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Post ${html}</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>uv8GbP</string>
-				</dict>
-				<key>title,html</key>
-				<dict>
-					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<true/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Post ${html}with ${title}</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>7GkroJ</string>
-				</dict>
-			</dict>
 			<key>INIntentParameters</key>
 			<array>
 				<dict>
@@ -319,6 +289,8 @@
 			<string>Allows you to select from your Micro.blog blogs and pass that ID to another action.</string>
 			<key>INIntentDescriptionID</key>
 			<string>fxA1i0</string>
+			<key>INIntentIneligibleForSuggestions</key>
+			<true/>
 			<key>INIntentLastParameterTag</key>
 			<integer>1</integer>
 			<key>INIntentManagedParameterCombinations</key>
@@ -337,20 +309,6 @@
 			</dict>
 			<key>INIntentName</key>
 			<string>GetBlogID</string>
-			<key>INIntentParameterCombinations</key>
-			<dict>
-				<key>blogID</key>
-				<dict>
-					<key>INIntentParameterCombinationIsLinked</key>
-					<true/>
-					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<true/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Select a${blogID}</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>n5SSM7</string>
-				</dict>
-			</dict>
 			<key>INIntentParameters</key>
 			<array>
 				<dict>
@@ -496,6 +454,8 @@
 			<string>Uploads the given image to Micro.blog. You can specify the Blog ID if you want to upload to something other than your default blog.</string>
 			<key>INIntentDescriptionID</key>
 			<string>dWgwm3</string>
+			<key>INIntentIneligibleForSuggestions</key>
+			<true/>
 			<key>INIntentInput</key>
 			<string>image</string>
 			<key>INIntentLastParameterTag</key>
@@ -516,22 +476,6 @@
 			</dict>
 			<key>INIntentName</key>
 			<string>UploadImage</string>
-			<key>INIntentParameterCombinations</key>
-			<dict>
-				<key>image,blogID</key>
-				<dict>
-					<key>INIntentParameterCombinationIsLinked</key>
-					<true/>
-					<key>INIntentParameterCombinationIsPrimary</key>
-					<true/>
-					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
-					<true/>
-					<key>INIntentParameterCombinationTitle</key>
-					<string>Upload ${image}</string>
-					<key>INIntentParameterCombinationTitleID</key>
-					<string>PlYOio</string>
-				</dict>
-			</dict>
 			<key>INIntentParameters</key>
 			<array>
 				<dict>
