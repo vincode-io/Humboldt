@@ -280,24 +280,24 @@
 					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>INIntentResponseOutput</key>
-				<string>location</string>
+				<string>publishedURL</string>
 				<key>INIntentResponseParameters</key>
 				<array>
 					<dict>
 						<key>INIntentResponseParameterDisplayName</key>
-						<string>Location</string>
+						<string>Published URL</string>
 						<key>INIntentResponseParameterDisplayNameID</key>
 						<string>7irmBn</string>
 						<key>INIntentResponseParameterDisplayPriority</key>
 						<integer>1</integer>
 						<key>INIntentResponseParameterName</key>
-						<string>location</string>
+						<string>publishedURL</string>
 						<key>INIntentResponseParameterTag</key>
-						<integer>1</integer>
+						<integer>2</integer>
 						<key>INIntentResponseParameterType</key>
-						<string>String</string>
+						<string>URL</string>
 					</dict>
 				</array>
 			</dict>

@@ -44,9 +44,14 @@ public class PostHTMLIntentHandler: NSObject, SnippetsIntentHandler, PostHTMLInt
 				completion(.init(code: .failure, userActivity: nil))
 				return
 			}
-			
+
+			guard let publishedPath = location, let publishedURL = URL(string: publishedPath) else {
+				completion(.init(code: .failure, userActivity: nil))
+				return
+			}
+
 			let response = PostHTMLIntentResponse(code: .success, userActivity: nil)
-			response.location = location
+			response.publishedURL = publishedURL
 			completion(response)
 		}
 	}
