@@ -29,8 +29,6 @@
 			<true/>
 			<key>INIntentInput</key>
 			<string>html</string>
-			<key>INIntentKeyParameter</key>
-			<string>html</string>
 			<key>INIntentLastParameterTag</key>
 			<integer>3</integer>
 			<key>INIntentManagedParameterCombinations</key>
@@ -245,8 +243,6 @@
 						<string>SzYtbe</string>
 						<key>INIntentResponseCodeName</key>
 						<string>tokenRequired</string>
-						<key>INIntentResponseCodeSuccess</key>
-						<true/>
 					</dict>
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
