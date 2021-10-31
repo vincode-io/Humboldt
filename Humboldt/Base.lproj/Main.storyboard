@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,6 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKC-85-g1O">
+                                <rect key="frame" x="0.0" y="44" width="414" height="304.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="JI5-Fy-wQ6">
+                                        <rect key="frame" x="182" y="127.5" width="50" height="50"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Wwr-qd-DFE"/>
+                                            <constraint firstAttribute="width" constant="50" id="XRh-VT-fLx"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="JI5-Fy-wQ6" firstAttribute="centerX" secondItem="VKC-85-g1O" secondAttribute="centerX" id="40x-fn-VSA"/>
+                                    <constraint firstItem="JI5-Fy-wQ6" firstAttribute="centerY" secondItem="VKC-85-g1O" secondAttribute="centerY" id="dgM-Ol-lLq"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="b25-Za-wrU">
                                 <rect key="frame" x="57" y="348.5" width="300" height="199"/>
                                 <subviews>
@@ -54,8 +72,12 @@ Enter your Micro.blog email address. You'll receive an email with a link to conf
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VKC-85-g1O" secondAttribute="trailing" id="Fe2-w5-Iug"/>
+                            <constraint firstItem="b25-Za-wrU" firstAttribute="top" secondItem="VKC-85-g1O" secondAttribute="bottom" id="TbQ-Fx-qOc"/>
+                            <constraint firstItem="VKC-85-g1O" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="TuF-Eu-9Vg"/>
                             <constraint firstItem="b25-Za-wrU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XuT-oZ-Blh"/>
                             <constraint firstItem="b25-Za-wrU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="304.5" id="hXu-au-3Ih"/>
+                            <constraint firstItem="VKC-85-g1O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u2f-35-5Kt"/>
                             <constraint firstItem="b25-Za-wrU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xDt-eY-MnG"/>
                         </constraints>
                     </view>
@@ -78,6 +100,24 @@ Enter your Micro.blog email address. You'll receive an email with a link to conf
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53B-09-95U">
+                                <rect key="frame" x="0.0" y="44" width="414" height="345"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Symbol" translatesAutoresizingMaskIntoConstraints="NO" id="Khq-4y-c14">
+                                        <rect key="frame" x="182" y="147.5" width="50" height="50"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="8X3-bB-tT7"/>
+                                            <constraint firstAttribute="height" constant="50" id="U7x-gf-RmP"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Khq-4y-c14" firstAttribute="centerX" secondItem="53B-09-95U" secondAttribute="centerX" id="0yI-5Z-lXH"/>
+                                    <constraint firstItem="Khq-4y-c14" firstAttribute="centerY" secondItem="53B-09-95U" secondAttribute="centerY" id="jcu-e8-33D"/>
+                                </constraints>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ekr-GT-8zm">
                                 <rect key="frame" x="57" y="389" width="300" height="118"/>
                                 <subviews>
@@ -114,8 +154,12 @@ Enter your Micro.blog email address. You'll receive an email with a link to conf
                         <viewLayoutGuide key="safeArea" id="uGP-EV-x7i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="53B-09-95U" firstAttribute="top" secondItem="uGP-EV-x7i" secondAttribute="top" id="CFM-05-yhq"/>
                             <constraint firstItem="ekr-GT-8zm" firstAttribute="centerX" secondItem="FwW-rt-uSe" secondAttribute="centerX" id="OZI-kt-5e1"/>
+                            <constraint firstItem="ekr-GT-8zm" firstAttribute="top" secondItem="53B-09-95U" secondAttribute="bottom" id="RlU-og-afs"/>
                             <constraint firstItem="ekr-GT-8zm" firstAttribute="centerY" secondItem="FwW-rt-uSe" secondAttribute="centerY" id="TTe-yb-R7a"/>
+                            <constraint firstItem="uGP-EV-x7i" firstAttribute="trailing" secondItem="53B-09-95U" secondAttribute="trailing" id="aXr-nw-gsC"/>
+                            <constraint firstItem="53B-09-95U" firstAttribute="leading" secondItem="uGP-EV-x7i" secondAttribute="leading" id="hsj-cL-lXg"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -125,6 +169,10 @@ Enter your Micro.blog email address. You'll receive an email with a link to conf
         </scene>
     </scenes>
     <resources>
+        <image name="Symbol" width="346" height="344"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
