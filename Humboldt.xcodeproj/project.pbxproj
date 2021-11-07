@@ -91,6 +91,7 @@
 				5194D58827064D6B00FA0365 /* Frameworks */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		5194D54827060F6300FA0365 /* Intents */ = {
 			isa = PBXGroup;
