@@ -325,10 +325,10 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		5194D56727060FEC00FA0365 /* XCRemoteSwiftPackageReference "snippets" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/microdotblog/snippets.git";
+			repositoryURL = "https://github.com/vincode-io/snippets.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				branch = "post-categories";
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

@@ -30,6 +30,14 @@ public class PostHTMLIntentHandler: NSObject, SnippetsIntentHandler, PostHTMLInt
 		}
 		completion(.success(with: html))
 	}
+
+	public func resolveCategory(for intent: PostHTMLIntent, with completion: @escaping (INStringResolutionResult) -> Void) {
+		guard let category = intent.category else {
+			completion(.notRequired())
+			return
+		}
+		completion(.success(with: category))
+	}
 	
 	public func handle(intent: PostHTMLIntent, completion: @escaping (PostHTMLIntentResponse) -> Void) {
 		do {
@@ -39,7 +47,7 @@ public class PostHTMLIntentHandler: NSObject, SnippetsIntentHandler, PostHTMLInt
 			return
 		}
 
-		let _ = Snippets.shared.postHtml(title: intent.title ?? "", content: intent.html ?? "") { error, location in
+		let _ = Snippets.shared.postHtml(title: intent.title ?? "", content: intent.html ?? "", category: intent.category ?? "") { error, location in
 			if error != nil {
 				completion(.init(code: .failure, userActivity: nil))
 				return
